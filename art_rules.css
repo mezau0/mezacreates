@@ -21,6 +21,8 @@ body {
 }
 
 h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
 
@@ -205,8 +207,11 @@ html {scroll-behavior: smooth; }
 
 #two {
 	display: grid;
-	margin: 2em;
-	width: 1000px;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 950px;
 	grid-template-columns:  repeat(2, auto);
 	grid-template-rows: repeat(6, auto);
 	justify-content: center;
@@ -214,8 +219,11 @@ html {scroll-behavior: smooth; }
 
 #three {
 	display: grid;
-	margin: 2em;
-	width: 1000px;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 950px;
 	grid-template-columns:  repeat(3, auto);
 	grid-template-rows: repeat(6, auto);
 	justify-content: center;
@@ -233,8 +241,11 @@ html {scroll-behavior: smooth; }
 
 #four {
 	display: grid;
-	margin: 2em;
-	width: 1000px;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 950px;
 	grid-template-columns:  repeat(4, auto);
 	grid-template-rows: repeat(6, auto);
 	justify-content: center;
@@ -252,8 +263,11 @@ html {scroll-behavior: smooth; }
 
 #five {
 	display: grid;
-	margin: 2em;
-	width: 1000px;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 950px;
 	grid-template-columns:  repeat(5, auto);
 	grid-template-rows: repeat(6, auto);
 	justify-content: center;
@@ -273,8 +287,10 @@ grid-column-start: 1;
 
 #six {
 	display: grid;
-	margin: 2em;
-	width: 1000px;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1px;
+	margin-bottom: 1px;	width: 950px;
 	grid-template-columns:  repeat(6, auto);
 	grid-template-rows: repeat(6, auto);
 	justify-content: center;
@@ -314,8 +330,10 @@ grid-column-end: 7; }
 
 #seven {
 	display: grid;
-	margin: 2em;
-	width: 1000px;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-top: 1px;
+	margin-bottom: 1px;	width: 950px;
 	grid-template-columns:  repeat(7, auto);
 	grid-template-rows: repeat(6, auto);
 	justify-content: center;
