@@ -1,0 +1,355 @@
+* {box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #0B8C75 #072040;
+  }
+
+html {
+  cursor: url("submerged/favicon.ico"), default;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    height: 3em;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid #0B8C75;
+    margin: 0;
+    margin-top: -10px;
+    padding: 0 0 10px 0;
+    z-index: 10;
+    }
+nav a {
+    text-decoration: none;
+    color: #0B8C75;
+    }
+nav a:hover {color: #1FA2BF;}
+nav ul {list-style-type: none;}
+nav ul li {
+    display: inline;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px dotted #999;
+    }
+    nav ul li a img {vertical-align: text-bottom;}
+    nav ul li last-child {border-right: none}
+
+	.dropdown {
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		min-width: 13em;
+		background-color: #91AAF2;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 20;
+		}
+
+	.dropdown-content a {
+		background-color: rgba(0, 0, 0, 0.8);
+		color: white;
+		padding: 0.5em 2em 0.5em 1em;
+		text-decoration: none;
+		border-bottom: 1px solid gray;
+		display: block;
+		}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+h2 {font-size: 1.75em;}
+
+body {
+	background-color: #072040;
+	background-image: url(submerged/main1.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	margin: 2em;
+	font-family: "OpenDyslexic-Regular";
+	padding-bottom: 6px;
+	color: white;
+	/* overflow-y: hidden;
+	overflow-x: hidden; */
+		}
+
+@font-face {
+  font-family: OpenDyslexic-Regular;
+  src: url(OpenDyslexic-Regular.otf);
+}
+
+button {
+	background-color: royalblue;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+	position: relative;
+	margin: 10px;
+	font-family: "OpenDyslexic-Regular";
+	padding: 5px;
+  	color: #01050D;
+    cursor: url("submerged/favicon1.ico"), pointer;
+
+}
+
+a {
+  font-weight: bold;
+  color: #0B8C75;
+  text-decoration: none;
+  border: 0px;
+}
+a:hover {
+  color: #1FA2BF;
+  cursor: url("submerged/favicon1.ico"), pointer;
+
+}
+
+html {scroll-behavior: smooth; }
+	p { line-height: 1.5em; }
+
+hr {color: #0B8C75;}
+
+.audio {
+	margin: 10px;
+	left: 20px;
+	padding-bottom: 0px;
+	bottom: 20px;
+	position: fixed;
+	object-position: bottom left;
+}
+
+.audio2 {
+	margin: 10px;
+	left: 20px;
+	padding-bottom: 0px;
+	bottom: 20px;
+	position: fixed;
+	object-position: bottom center;
+}
+
+.audio3 {
+	margin: 10px;
+	left: 20px;
+	padding-bottom: 0px;
+	bottom: 20px;
+	position: fixed;
+	object-position: top right;
+}
+
+.small {height: 50px;}
+
+.big {height: 350px;}
+
+audio::-webkit-media-controls-panel {background-color: royalblue ;}
+
+.corner {
+	bottom: 10px;
+	margin: 10px;
+	right: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+.middle {
+	bottom: 10px;
+	margin: 10px;
+	right: 115px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+.corner2 {
+	bottom: 10px;
+	margin: 10px;
+	right: 250px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut_A {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+audio {
+	color: blue;
+}
+
+
+.bubbles{
+	height: 100vh;
+	width: 100%;
+	margin: auto;
+	z-index: 0;
+	background-color: none;
+}
+
+.bubbles span {
+	position: absolute;
+	height: 20px;
+	width: 25px;
+	background-image: radial-gradient(transparent 50%, #1a5284, transparent);
+	border-radius: 50%;
+	filter: blur(1px);
+	left: calc(10% * var(--left) );
+	bottom: 0%;
+	animation: animateBubbles 10s linear infinite;
+	animation-delay: var(--delay);
+}
+
+@keyframes animateBubbles {
+	0% {
+		bottom: 0;
+		margin-left: 90px;
+		margin-right: 0;
+	}
+	20% {
+		margin-left: 0px;
+		margin-right: 90px;
+	}
+	40% {
+		margin-left: 90px;
+		margin-right: 0;
+	}
+	60% {
+		margin-left: 0px;
+		margin-right: 90px;
+	}
+	80% {
+		margin-left: 90px;
+		margin-right: 0;
+	}
+	100% {
+		bottom: 100%;
+		margin-left: 0px;
+		margin-right: 90px;
+	}
+}
+
+@media only screen and (max-width: 480px) /*phones*/
+{
+	.bubbles span {
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	background-image: radial-gradient(transparent 50%, #1a5284, transparent);
+	border-radius: 50%;
+	filter: blur(1px);
+	left: calc(10% * var(--left) );
+	bottom: 0%;
+	animation: animateBubbles 10s linear infinite;
+	animation-delay: var(--delay);
+	}
+
+}
+
+@media only screen and (max-width: 768px) /*tablets*/
+{
+  * {font-size: 12px; color: white;}
+
+  button {
+	margin: 3px;
+	padding: 5px;
+	font-size: 13px;
+}
+
+  .audio {
+	margin: 10px;
+	left: 20px;
+	padding-bottom: 0px;
+	bottom: 20px;
+	position: fixed;
+	object-position: bottom left;
+	}
+
+	.one {
+		margin: 10px;
+		left: 20px;
+		padding-bottom: 0px;
+		bottom: 80px;
+		position: fixed;
+		object-position: bottom left;
+	}
+
+	.two {
+		margin: 10px;
+		left: 60px;
+		padding-bottom: 0px;
+		bottom: 80px;
+		position: fixed;
+		object-position: bottom left;
+	}
+
+	.three {
+		margin: 10px;
+		left: 100px;
+		padding-bottom: 0px;
+		bottom: 80px;
+		position: fixed;
+		object-position: bottom left;
+	}
+
+	audio::-webkit-media-controls-panel {background-color: royalblue ;}
+
+	.corner {
+		bottom: 0px;
+		margin: 10px;
+		right: 0px;
+		padding-bottom: 50px;
+		position: fixed;
+		object-position: bottom right;
+	}
+
+	.middle {
+		bottom: 0px;
+		margin: 10px;
+		right: 80px;
+		padding-bottom: 50px;
+		position: fixed;
+		object-position: bottom right;
+	}
+
+	.corner2 {
+		bottom: 0px;
+		margin: 10px;
+		right: 160px;
+		padding-bottom: 50px;
+		position: fixed;
+		object-position: bottom right;
+	}
+
+	.small {height: 30px;}
+
+	.big {height: 210px;}
+
+}
+
