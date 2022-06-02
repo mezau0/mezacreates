@@ -21,6 +21,8 @@ body {
 }
 
 h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
 
@@ -37,7 +39,7 @@ div {text-align: center;}
 
 hr {border: 1px solid purple;
 	background-color: purple;
-	padding-bottom: 0px
+	padding-bottom: 0px;
 	margin: 0px; }
 
 main {
@@ -97,7 +99,7 @@ html {scroll-behavior: smooth; }
 		border-right: 1px dotted #999;
 		}
 		nav ul li a img {vertical-align: text-bottom;}
-		nav ul li: last-child {border-right: none}
+		nav ul li last-child {border-right: none}
 
 	#main {
 		margin-top: 3em;
@@ -111,7 +113,6 @@ html {scroll-behavior: smooth; }
 		margin-right: auto;
 		}
 
-	video {width: 100%;	height: 100%;}
 
 	section { margin-top: 2px; }
 
