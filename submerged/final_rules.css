@@ -1,0 +1,334 @@
+* {box-sizing: border-box;
+}
+
+html {
+  cursor: url("underwater/favicon.ico"), default;
+}
+
+body {
+	background-color: #01050D;
+	background-image: url(underwater/main1.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: center;
+	position: relative;
+	margin: 2em;
+	font-family: "OpenDyslexic-Regular";
+	padding-bottom: 6px;
+	color: white;
+	overflow-y: hidden;
+	overflow-x: hidden;
+		}
+
+@font-face {
+  font-family: OpenDyslexic-Regular;
+  src: url(OpenDyslexic-Regular.otf);
+}
+
+button {
+	background-color: royalblue;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+	position: relative;
+	margin: 10px;
+	font-family: "OpenDyslexic-Regular";
+	padding: 5px;
+  	color: #01050D;
+    cursor: url("underwater/favicon1.ico"), pointer;
+
+}
+
+a {
+  font-weight: bold;
+  color: purple;
+  text-decoration: none;
+  border: 0px;
+}
+a:hover {
+  color: violet;
+  cursor: url("underwater/favicon1.ico"), pointer;
+
+}
+
+html {scroll-behavior: smooth; }
+	p { line-height: 1.5em; }
+
+.audio {
+	margin: 10px;
+	left: 20px;
+	padding-bottom: 0px;
+	bottom: 20px;
+	position: fixed;
+	object-position: bottom left;
+}
+
+.one {
+	margin: 10px;
+	left: 40px;
+	padding-bottom: 0px;
+	bottom: 80px;
+	position: fixed;
+	object-position: bottom left;
+}
+
+.two {
+	margin: 10px;
+	left: 140px;
+	padding-bottom: 0px;
+	bottom: 80px;
+	position: fixed;
+	object-position: bottom left;
+}
+
+.three {
+	margin: 10px;
+	left: 240px;
+	padding-bottom: 0px;
+	bottom: 80px;
+	position: fixed;
+	object-position: bottom left; 
+}
+
+.small {height: 50px;}
+
+.big {height: 350px;}
+
+audio::-webkit-media-controls-panel {background-color: royalblue ;}
+
+.corner {
+	bottom: 0px;
+	margin: 10px;
+	right: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+.middle {
+	bottom: 0px;
+	margin: 10px;
+	right: 115px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+.corner2 {
+	bottom: 0px;
+	margin: 10px;
+	right: 250px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut_A {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+#question {
+  opacity: 1;
+  animation-name: fadeInOut;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+#question1 {
+  opacity: 1;
+  animation-name: fadeInOut;
+  animation-duration: 4s;
+}
+
+#question2 {
+  opacity: 1;
+  animation-name: fadeInOut;
+  animation-duration: 4s;
+}
+
+audio {
+	color: blue;
+}
+
+
+.bubbles{
+	height: 70vh;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	z-index: 0;
+	background-color: ;
+}
+
+.bubbles span {
+	position: absolute;
+	height: 20px;
+	width: 25px;
+	background-image: radial-gradient(transparent 50%, #133F66, transparent);
+	border-radius: 50%;
+	filter: blur(1px);
+	left: calc(10% * var(--left) );
+	bottom: 0%;
+	animation: animateBubbles 10s linear infinite;
+	animation-delay: var(--delay);
+}
+
+@keyframes animateBubbles {
+	0% {
+		bottom: 0;
+		margin-left: 90px;
+		margin-right: 0;
+	}
+	20% {
+		margin-left: 0px;
+		margin-right: 90px;
+	}
+	40% {
+		margin-left: 90px;
+		margin-right: 0;
+	}
+	60% {
+		margin-left: 0px;
+		margin-right: 90px;
+	}
+	80% {
+		margin-left: 90px;
+		margin-right: 0;
+	}
+	100% {
+		bottom: 100%;
+		margin-left: 0px;
+		margin-right: 90px;
+	}
+}
+
+@media only screen and (max-width: 480px) /*phones*/
+{
+	.bubbles span {
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	background-image: radial-gradient(transparent 50%, #133F66, transparent);
+	border-radius: 50%;
+	filter: blur(1px);
+	left: calc(10% * var(--left) );
+	bottom: 0%;
+	animation: animateBubbles 10s linear infinite;
+	animation-delay: var(--delay);
+	}
+
+}
+
+@media only screen and (max-width: 768px) /*tablets*/
+{
+  * {font-size: 12px; color: white;}
+
+  button {
+	margin: 3px;
+	padding: 5px;
+	font-size: 13px;
+}
+
+	  /* Hide scrollbar for Chrome, Safari and Opera */
+	*::-webkit-scrollbar {
+	  display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	* {
+	  -ms-overflow-style: none;  /* IE and Edge */
+	  scrollbar-width: none;  /* Firefox */
+	}
+
+  .audio {
+	margin: 10px;
+	left: 20px;
+	padding-bottom: 0px;
+	bottom: 20px;
+	position: fixed;
+	object-position: bottom left;
+	}
+
+	.one {
+		margin: 10px;
+		left: 20px;
+		padding-bottom: 0px;
+		bottom: 80px;
+		position: fixed;
+		object-position: bottom left;
+	}
+
+	.two {
+		margin: 10px;
+		left: 60px;
+		padding-bottom: 0px;
+		bottom: 80px;
+		position: fixed;
+		object-position: bottom left;
+	}
+
+	.three {
+		margin: 10px;
+		left: 100px;
+		padding-bottom: 0px;
+		bottom: 80px;
+		position: fixed;
+		object-position: bottom left;
+	}
+
+	audio::-webkit-media-controls-panel {background-color: royalblue ;}
+
+	.corner {
+		bottom: 0px;
+		margin: 10px;
+		right: 0px;
+		padding-bottom: 50px;
+		position: fixed;
+		object-position: bottom right;
+	}
+
+	.middle {
+		bottom: 0px;
+		margin: 10px;
+		right: 80px;
+		padding-bottom: 50px;
+		position: fixed;
+		object-position: bottom right;
+	}
+
+	.corner2 {
+		bottom: 0px;
+		margin: 10px;
+		right: 160px;
+		padding-bottom: 50px;
+		position: fixed;
+		object-position: bottom right;
+	}
+
+	.small {height: 30px;}
+
+	.big {height: 210px;}
+
+}
+
