@@ -64,21 +64,29 @@
 }
 
 #art1 {
-	display: grid;
+	display: flex;
+	flex: left;
+	overflow-x: scroll;
 	margin: 2em;
+	height: 550px;
 	width: 950px;
-	grid-template-columns:  repeat(4, auto);
-	grid-template-rows: repeat(6, auto);
 	justify-content: center;
     background-color: rgba(145, 170, 242, 0.2);
 }
 
-#art1 div.box1{
-	grid-column-start: 1;
-	grid-column-end: 5;
+.video {width: 25%; margin: 10px;}
+
+.box {
+	padding: 0;
 }
 
-.video {width: 25%; margin: 10px;}
+.box1 {
+	margin: 2em;
+	height: 100%;
+	width: 950px;
+	justify-content: center;
+    background-color: rgba(145, 170, 242, 0.2);
+}
 
 	</style>
 
@@ -94,8 +102,8 @@
 					<li class="dropdown"><a>Art</a>
 				 <div class="dropdown-content">
 				   <a href="art.html"> General </a>
-				   <a href="conceptober.html"> Conceptober 2020</a>
-				   <a href="conceptober2021.html"> Conceptober 2021</a>
+				   <a href="comics.html"> Comics </a>
+				   <a href="october.html"> October Art Challenges </a>
 		
 				   <li class="dropdown"><a>Games</a>
 					<div class="dropdown-content">
@@ -124,94 +132,75 @@
 <div id="art">
 
 		<div class= "box">
-		<img src="conceptober/1.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/1.jpg" style="width: 100%" alt="Day 1" onclick="openModal();currentSlide(1)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/2.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/2.jpg" style="width: 100%" alt="Day 2" onclick="openModal();currentSlide(2)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/3.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/3.jpg" style="width: 100%" alt="Day 3" onclick="openModal();currentSlide(3)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/4.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/4.jpg" style="width: 100%" alt="Day 4" onclick="openModal();currentSlide(4)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/5.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/5.jpg" style="width: 100%" alt="Day 5" onclick="openModal();currentSlide(5)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/6.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/6.jpg" style="width: 100%" alt="Day 6" onclick="openModal();currentSlide(6)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/7.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/7.jpg" style="width: 100%" alt="Day 7" onclick="openModal();currentSlide(7)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/8.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/8.jpg" style="width: 100%" alt="Day 8" onclick="openModal();currentSlide(8)" class="hover-shadow"> </div>
 
 		<div class= "box1">
-		<img src="conceptober/9.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/9.jpg" style="width: 100%" alt="Day 9" onclick="openModal();currentSlide(9)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/10.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/10.jpg" style="width: 100%" alt="Day 10" onclick="openModal();currentSlide(10)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/11.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/11.jpg" style="width: 100%" alt="Day 11" onclick="openModal();currentSlide(11)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/12.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/12.jpg" style="width: 100%" alt="Day 12" onclick="openModal();currentSlide(12)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/13.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/13.jpg" style="width: 100%" alt="Day 13" onclick="openModal();currentSlide(13)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/14.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/14.jpg" style="width: 100%" alt="Day 14" onclick="openModal();currentSlide(14)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/15.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/15.jpg" style="width: 100%" alt="Day 15" onclick="openModal();currentSlide(15)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/16.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/16.jpg" style="width: 100%" alt="Day 16" onclick="openModal();currentSlide(16)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/17.jpg" style="width: 100%" alt=""> </div>
+		<img src="conceptober/17.jpg" style="width: 100%" alt="Day 17" onclick="openModal();currentSlide(17)" class="hover-shadow"> </div>
 
 		<div class= "boxa">
-		<img src="conceptober/18.png" style="width: 100%" alt=""> </div>
+		<img src="conceptober/18.png" style="width: 100%" alt="Day 18" onclick="openModal();currentSlide(18)" class="hover-shadow"> </div>
 
 		<div class= "boxb">
-		<img src="conceptober/19.png" style="width: 100%" alt=""> </div>
+		<img src="conceptober/19.png" style="width: 100%" alt="Day 19" onclick="openModal();currentSlide(19)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/20.png" style="width: 100%" alt=""> </div>
+		<img src="conceptober/20.png" style="width: 100%" alt="Day 20" onclick="openModal();currentSlide(20)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/21.png" style="width: 100%" alt=""> </div>
+		<img src="conceptober/21.png" style="width: 100%" alt="Day 21" onclick="openModal();currentSlide(21)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/22.png" style="width: 100%" alt=""> </div>
+		<img src="conceptober/22.png" style="width: 100%" alt="Day 22" onclick="openModal();currentSlide(22)" class="hover-shadow"> </div>
 
 		<div class= "box">
-		<img src="conceptober/23.png" style="width: 100%" alt=""> </div>
+		<img src="conceptober/23.png" style="width: 100%" alt="Day 23" onclick="openModal();currentSlide(23)" class="hover-shadow"> </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<h1> Conceptober Process Videos </h1>
 	<p> Warning! Music may be loud. Click to enable sound. Scroll down for more videos &#38; the song list! Most songs have been edited for speed. </p>
@@ -219,172 +208,173 @@
 <div id="art1">
 
 	<div class="box">
-	<video controls muted poster="videos/ghost.png" loop preload playsinline controlslist="nodownload">
-		<source src="videos/ghost.mp4" type="video/mp4" width=10>
-		<track src="ghost.vtt" kind="captions" />
+	<video controls muted poster="videos/ghost.png" loop preload playsinline controlslist="nodownload" style="height: 100%">
+		<source src="videos/ghost.mp4" type="video/mp4" width=10 alt="video here">
+		<track src="ghost.vtt" kind="captions" srclang="en" label="English" default/>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/abracadabra.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/abracadabra.png" loop preload playsinline controlslist="nodownload" style="height: 100%">
 		<source src="videos/abracadabra.mp4" type="video/mp4" width=10>
 	<track src="videos/abracadabra.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/villain.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/villain.png" loop preload playsinline controlslist="nodownload" style="height: 100%"> 
 		<source src="videos/villain.mp4" type="video/mp4" width=10>
 	<track src="videos/villain.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/baker.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/baker.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/baker.mp4" type="video/mp4" width=10>
 	<track src="videos/baker.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/witch.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/witch.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/witch.mp4" type="video/mp4" width=10>
 	<track src="videos/witch.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/Enemies.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/Enemies.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/Enemies.mp4" type="video/mp4" width=10>
 	<track src="videos/Enemies.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/explorer.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/explorer.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/explorer.mp4" type="video/mp4" width=10>
 	<track src="videos/explorer.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/pirate.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/pirate.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/pirate.mp4" type="video/mp4" width=10>
 	<track src="videos/pirate.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/zombie.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/zombie.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/zombie.mp4" type="video/mp4" width=10>
 	<track src="videos/zombie.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/vamp.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/vamp.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/vamp.mp4" type="video/mp4" width=10>
 	<track src="videos/vamp.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/reapers.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/reapers.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/Reapers.mp4" type="video/mp4" width=10>
 	<track src="videos/Reapers.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/thief.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/thief.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/thief.mp4" type="video/mp4" width=10>
 	<track src="videos/thief.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/wind.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/wind.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/wind.mp4" type="video/mp4" width=10>
 	<track src="videos/wind.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/taurus.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/taurus.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/taurus.mp4" type="video/mp4" width=10>
 	<track src="videos/taurus.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/dragon.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/dragon.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/dragon.mp4" type="video/mp4" width=10>
 	<track src="videos/dragon.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/skater.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/skater.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/skater.mp4" type="video/mp4" width=10>
 	<track src="videos/skater.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/robot.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/robot.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/robot.mp4" type="video/mp4" width=10>
 	<track src="videos/robot.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/samurai.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/samurai.png" loop preload playsinline controlslist="nodownload"style="width: 100%">
 		<source src="videos/samurai.mp4" type="video/mp4" width=10>
 	<track src="videos/samurai.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/venus.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/venus.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/venus.mp4" type="video/mp4" width=10>
 	<track src="videos/venus.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/archer.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/archer.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/archer.mp4" type="video/mp4" width=10>
 	<track src="videos/archer.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/ninja.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/ninja.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/ninja.mp4" type="video/mp4" width=10>
 	<track src="videos/ninja.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/barkeep.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/barkeep.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/barkeep.mp4" type="video/mp4" width=10>
 	<track src="videos/barkeep.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/detective.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/detective.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/detective.mp4" type="video/mp4" width=10>
 	<track src="videos/detective.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
 
 	<div class="box">
-	<video controls muted poster="videos/hacker.png" loop preload playsinline controlslist="nodownload">
+	<video controls muted poster="videos/hacker.png" loop preload playsinline controlslist="nodownload" style="width: 100%">
 		<source src="videos/hacker.mp4" type="video/mp4" width=10>
 	<track src="videos/hacker.vtt" kind="captions" srclang="en" label="English" default>
 	</video>
 	</div>
+</div>
 
 	<div class="box1">
 		<h2> Song List: </h2>
@@ -436,8 +426,7 @@
 
 		</p>
 	</div>
-</div>
-
+<br><br>
 <br>
 <br>
 <br>
@@ -472,6 +461,8 @@
 		<p> This work is liscenced under the Creative Commons Attribution-ShareALike 3.0 License. CC. For questions, please email <a href="mailto:mezau0@gmail.com">mezau0@gmail.com</a>. </p>
 		<br>
 	</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
