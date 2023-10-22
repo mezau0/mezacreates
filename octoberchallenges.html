@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title> October Art Challenges </title>
+	<meta name="description" content="All the art mezacreates produced for Conceptober.">
+	<meta name= "author" content="Luka Meza U.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="rules.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<style>
+
+	p {margin: 15px;}
+
+	h1 {margin: 15px; color: #7A38A6;}
+
+	h2 {margin: 15px; color: #7A38A6;}
+
+	</style>
+
+</head>
+
+<body>
+<nav id="nav"> <!--This is navigation, a list-->
+			<!-- <ul type="square"> -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#contact">Contact</a></li>
+		
+					<li class="dropdown"><a>Art</a>
+				 <div class="dropdown-content">
+				   <a href="art.html"> General </a>
+				   <a href="comics.html"> Comics </a>
+				   <a href="octoberchallenges.html"> October Art Challenges </a>
+		
+				   <li class="dropdown"><a>Games</a>
+					<div class="dropdown-content">
+					<a href="witchshour.html"> The Witch's Hour</a>
+					<a href="kisses.html"> Her/She Kisses</a>
+					<a href="submerged.html"> Submerged</a>
+					<a href="ascenders.html"> The Ascenders</a>
+		
+					<li class="dropdown"><a> Portfolios </a>
+						<div class="dropdown-content">
+							<a href="Portfoliomc.html"> General </a>
+							<a href="Portfolio.html"> Graphic Design </a>
+					</ul>
+		</nav>
+
+<br><br>
+<h1> October Art Challenges </h1>
+
+<p> Every year for October, I revisit a particular unfinished project by participating in art challenges. Below you can see the evolution of the concept, from just one-off character creation towards a larger narrative.  </p>
+
+<h2> 2023 Challenge </h2>
+
+<!-- height="675px" width="900px" -->
+<div>
+    <iframe id="MemoryGame" src="memorygame.html" height="675vh" width="80%">
+    </iframe>
+  </div>
+<div>
+    <br><button class="button" onClick="refreshPage()"> Restart </button> <br><br>
+</div>
+
+<h2> OC-Tober 2022 </h2>
+<p> OC-Tober is a yearly art challenge spanning the month of October. It was created by <a href="https://www.instagram.com/bweird/" target="_blank"> @bweird </a>. All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>). </p>
+
+<div class="grid-container"> 
+    <img src="conceptober22/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="conceptober22/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="conceptober22/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    <img src="conceptober22/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    <img src="conceptober22/5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    <img src="conceptober22/6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    <img src="conceptober22/7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    <img src="conceptober22/8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+    <img src="conceptober22/9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+    <img src="conceptober22/10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    <img src="conceptober22/11.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+    <img src="conceptober22/12.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+</div>
+
+<!--Lightbox-->
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times;</span>
+<div class="modal-content">
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:80%">
+</div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:45%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:40%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:40%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:45%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:45%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:45%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/1.jpg" style="width:45%">
+    </div>
+
+    <div class="mySlides">
+    <img src="conceptober22/12.jpg" style="width:45%"> 
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Thumbnail image controls -->
+    <div class="thumbnails">
+    <img class="demo" src="conceptober22/1.jpg" onclick="currentSlide(1)" alt="">
+    <img class="demo" src="conceptober22/2.jpg" onclick="currentSlide(2)" alt="">
+    <img class="demo" src="conceptober22/3.jpg" onclick="currentSlide(3)" alt="">
+    <img class="demo" src="conceptober22/4.jpg" onclick="currentSlide(4)" alt="">
+    <img class="demo" src="conceptober22/5.jpg" onclick="currentSlide(5)" alt="">
+    <img class="demo" src="conceptober22/6.jpg" onclick="currentSlide(6)" alt="">
+    <img class="demo" src="conceptober22/7.jpg" onclick="currentSlide(7)" alt="">
+    <img class="demo" src="conceptober22/8.jpg" onclick="currentSlide(8)" alt="">
+    <img class="demo" src="conceptober22/9.jpg" onclick="currentSlide(9)" alt="">
+    <img class="demo" src="conceptober22/10.jpg" onclick="currentSlide(10)" alt="">
+    <img class="demo" src="conceptober22/11.jpg" onclick="currentSlide(11)" alt="">
+    <img class="demo" src="conceptober22/12.jpg" onclick="currentSlide(12)" alt="">
+    </div>
+
+</div>
+</div>
+
+<h2> Conceptober 2021 </h2>
+
+<p> Conceptober  was a yearly art challenge spanning the month of October. 
+	It was created by <a href="https://www.instagram.com/melosprout/" target="_blank"> @melosprout </a>, <a href="https://www.instagram.com/nirryc/" target="_blank"> @nirryc </a>, and <a href="https://www.instagram.com/nuvodraws/" target="_blank"> @nuvodraws </a>.
+    <br>
+    All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>), with the exception of the background for Day 24 (Greek God) in 2020. Day 24 was a collab between myself and <a href="https://www.instagram.com/cramvisualz/" target="_blank"> @cramvisualz</a>.
+
+    <div> 
+        <div class="row"> 
+            <div class="column">
+              <img src="conceptober21/1.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              <img src="conceptober21/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              <img src="conceptober21/3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="conceptober21/4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              <img src="conceptober21/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+              <img src="conceptober21/6.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            </div>  
+            <div class="column">
+              <img src="conceptober21/7.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              <img src="conceptober21/8.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+              <img src="conceptober21/9.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="conceptober21/10.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+              <img src="conceptober21/11.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+              <img src="conceptober21/12.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober21/13.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/14.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/15.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober21/16.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/17.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/18.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober21/19.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/20.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/21.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober21/22.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/23.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober21/24.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+        </div>
+
+    <h2> Conceptober 2020 </h2>
+
+    <div> 
+        <div class="row"> 
+            <div class="column">
+              <img src="conceptober/1.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+              <img src="conceptober/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+              <img src="conceptober/3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="conceptober/4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+              <img src="conceptober/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+              <img src="conceptober/6.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow">
+            </div>  
+            <div class="column">
+              <img src="conceptober/7.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+              <img src="conceptober/8.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+              <img src="conceptober/9.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow">
+            </div>
+            <div class="column">
+              <img src="conceptober/10.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+              <img src="conceptober/11.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+              <img src="conceptober/12.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober/13.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/14.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/15.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober/16.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/17.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/18.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober/19.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/20.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/21.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="conceptober/22.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/23.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                <img src="conceptober/24.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+            </div>
+        </div>
+
+        <div class="boxA">
+        <div class="box1">
+            <h2> Prompt List: </h2>
+            <p>
+            <strong>Day 1:</strong> Ghost <br>
+            <strong>Day 2:</strong> Mage <br>
+            <strong>Day 3:</strong> Villain <br>
+            <strong>Days 4 &#38; 9:</strong> Baker & Professor <br>
+            <strong>Day 5:</strong> Witch <br>
+            <strong>Days 6 &#38; 7:</strong> Paladin & Demon <br>
+            <strong>Days 8 &#38; 15:</strong> Explorer & Flower Seller <br>
+            <strong>Day 10:</strong> Cowboy-Pirate <br>
+            <strong>Day 11:</strong> Zombie <br>
+            <strong>Days 12, 13, &#38; 14:</strong> Adore You by Harry Styles <br>
+            <strong>Day 16:</strong> Another One Bites The Dust by Queen <br>
+            <strong>Day 17:</strong> Money, Money, Money by ABBA<br>
+            <strong>Days 18 &#38; 19:</strong> Taurus by Spirit <br>
+            <strong>Day 20:</strong> This Is Berk from How To Train Your Dragon <br>
+            <strong>Day 21:</strong> Skater Boy by Avril Lavigne <br>
+            <strong>Days 22 &#38; 28</b>:</strong> Robot Rock/ Oh Yeah by Daft Punk <br>
+            <strong>Day 23:</strong> Neko Samurai (or Zamurai) Theme Song<br>
+            <strong>Day 24:</strong> Venus by Lady Gaga<br>
+            <strong>Day 25:</strong> Arrow by half&bull;alive<br>
+            <strong>Day 26:</strong> Pink Panther Theme Song<br>
+            <strong>Days 27 &#38; 29:</strong> Pick Your Poison by Black Pistol Fire <br>
+            <strong>Day 30:</strong> 1950 by King Princess <br>
+            <strong>Day 31:</strong> Hacker by Miguel Inzuna <br>
+            </p>
+        </div>
+
+        <div class="box1">
+            <h2> Song List: </h2>
+            <p>
+            <strong>Day 1:</strong> Hero Worship by The B-52's <br>
+            <strong>Day 2:</strong> Abracadabra by the Steve Miller Band <br>
+            <strong>Day 3:</strong> In The End by Linkin Park <br>
+            <strong>Days 4 &#38; 9:</strong> I Can't Help Myself (Sugar Pie, Honey Bunch) by The Four Tops <br>
+            <strong>Day 5:</strong> Why Does It Always Rain On Me by Travis <br>
+            <strong>Days 6 &#38; 7:</strong> Know Your Enemy by Rage Against The Machine<br>
+            <strong>Days 8 &#38; 15:</strong> A Thousand Miles by Vanessa Carlton<br>
+            <strong>Day 10:</strong> He's A Pirate Theme from Pirates of the Caribbean<br>
+            <strong>Day 11:</strong> Mi Novio Es Un Zombie by Alaska y Dinarama <br>
+            <strong>Days 12, 13, &#38; 14:</strong> Adore You by Harry Styles <br>
+            <strong>Day 16:</strong> Another One Bites The Dust by Queen <br>
+            <strong>Day 17:</strong> Money, Money, Money by ABBA<br>
+            <strong>Days 18 &#38; 19:</strong> Taurus by Spirit <br>
+            <strong>Day 20:</strong> This Is Berk from How To Train Your Dragon <br>
+            <strong>Day 21:</strong> Skater Boy by Avril Lavigne <br>
+            <strong>Days 22 &#38; 28</b>:</strong> Robot Rock/ Oh Yeah by Daft Punk <br>
+            <strong>Day 23:</strong> Neko Samurai (or Zamurai) Theme Song<br>
+            <strong>Day 24:</strong> Venus by Lady Gaga<br>
+            <strong>Day 25:</strong> Arrow by half&bull;alive<br>
+            <strong>Day 26:</strong> Pink Panther Theme Song<br>
+            <strong>Days 27 &#38; 29:</strong> Pick Your Poison by Black Pistol Fire <br>
+            <strong>Day 30:</strong> 1950 by King Princess <br>
+            <strong>Day 31:</strong> Hacker by Miguel Inzuna <br>
+            </p>
+        </div>
+
+        </div>
+
+        <div class="grid-container-videos">
+            <video controls muted poster="videos/ghost.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/ghost.mp4" type="video/mp4" alt="video here">
+                    <track src="ghost.vtt" kind="captions" srclang="en" label="English" default/>
+                </video>
+
+                <video controls muted poster="videos/abracadabra.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/abracadabra.mp4" type="video/mp4">
+                <track src="videos/abracadabra.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/villain.png" loop preload controlslist="nodownload" style="width: 25%"> 
+                    <source src="videos/villain.mp4" type="video/mp4">
+                <track src="videos/villain.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/baker.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/baker.mp4" type="video/mp4">
+                <track src="videos/baker.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/witch.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/witch.mp4" type="video/mp4">
+                <track src="videos/witch.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/Enemies.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/Enemies.mp4" type="video/mp4">
+                <track src="videos/Enemies.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/explorer.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/explorer.mp4" type="video/mp4">
+                <track src="videos/explorer.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/pirate.png" loop preload controlslist="nodownload" style="width: 25%">
+                    <source src="videos/pirate.mp4" type="video/mp4" width=10>
+                <track src="videos/pirate.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/zombie.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/zombie.mp4" type="video/mp4" width=10>
+                <track src="videos/zombie.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/vamp.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/vamp.mp4" type="video/mp4" width=10>
+                <track src="videos/vamp.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/reapers.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/Reapers.mp4" type="video/mp4" width=10>
+                <track src="videos/Reapers.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/thief.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/thief.mp4" type="video/mp4" width=10>
+                <track src="videos/thief.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/wind.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/wind.mp4" type="video/mp4" width=10>
+                <track src="videos/wind.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/taurus.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/taurus.mp4" type="video/mp4" width=10>
+                <track src="videos/taurus.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/dragon.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/dragon.mp4" type="video/mp4" width=10>
+                <track src="videos/dragon.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/skater.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/skater.mp4" type="video/mp4" width=10>
+                <track src="videos/skater.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/robot.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/robot.mp4" type="video/mp4" width=10>
+                <track src="videos/robot.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/samurai.png" loop preload playsinline controlslist="nodownload"style="width: 25%">
+                    <source src="videos/samurai.mp4" type="video/mp4" width=10>
+                <track src="videos/samurai.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/venus.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/venus.mp4" type="video/mp4" width=10>
+                <track src="videos/venus.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/archer.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/archer.mp4" type="video/mp4" width=10>
+                <track src="videos/archer.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/ninja.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/ninja.mp4" type="video/mp4" width=10>
+                <track src="videos/ninja.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/barkeep.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/barkeep.mp4" type="video/mp4" width=10>
+                <track src="videos/barkeep.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/detective.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/detective.mp4" type="video/mp4" width=10>
+                <track src="videos/detective.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+            
+                <video controls muted poster="videos/hacker.png" loop preload playsinline controlslist="nodownload" style="width: 25%">
+                    <source src="videos/hacker.mp4" type="video/mp4" width=10>
+                <track src="videos/hacker.vtt" kind="captions" srclang="en" label="English" default>
+                </video>
+        </div>
+
+      <p> 
+      <a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank">
+      <img border="0" alt="TikTok" src="shock.png" width= 140 height="140"> </a>
+      
+      <a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> 
+      <img border="0" alt="Etsy" src="blue.png" width="140" height="140"> </a>
+      
+      <a href="https://www.instagram.com/meza_creates/" target="blank">
+      <img border="0" alt="Instagram" src="pink.png" width="140" height="140">  </a>
+
+      </p>
+      
+
+  </div> <!--closes main div-->
+<br>
+<br>
+<footer id="contact">
+  <h1> Contact </h1>
+  <a href="https://www.instagram.com/meza_creates/" target="_blank"> Instagram <img src="insta.png" alt="icon" width="20" /></a>
+  <a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> Etsy <img src="etsy.png" alt="icon" width="20" /></a>
+  <a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank"> TikTok <img src="tiktok.png" alt="icon" width="20" /></a>
+  <a href="mailto:mezau0@gmail.com" target="_blank"> Email <img src="email.png" alt="icon" width="20" /></a>
+  <br>
+  <p> This work is liscenced under the Creative Commons Attribution-ShareALike 3.0 License. CC. For questions, comments, or concerns, please email <a href="mailto:mezau0@gmail.com">mezau0@gmail.com</a>. </p>
+  <br>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

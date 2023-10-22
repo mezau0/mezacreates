@@ -39,7 +39,7 @@ div {text-align: center;}
 
 hr {border: 1px solid purple;
 	background-color: purple;
-	padding-bottom: 0px
+	padding-bottom: 0px;
 	margin: 0px; }
 
 main {
@@ -99,7 +99,7 @@ html {scroll-behavior: smooth; }
 		border-right: 1px dotted #999;
 		}
 		nav ul li a img {vertical-align: text-bottom;}
-		nav ul li: last-child {border-right: none}
+		nav ul li last-child {border-right: none};
 
 	#main {
 		margin-top: 3em;
@@ -350,3 +350,110 @@ grid-column-start: 6;
 grid-column-end: 8; 
 grid-row-start: 1;
 grid-row-end: 3;}
+
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 5%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #91a9f294;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 80%;
+	max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	background-color: rgba(242,190,228, 0.5);
+	position: absolute;
+	top: 80px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+	display: none;
+  }
+
+  .thumbnails {
+	margin: auto;
+	width: 25%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	background-color: rgba(242,190,228, 0.5);
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(242,190,228, 1);
+  }
+  
+  img.demo {
+	opacity: 0.6;
+	height: 8%;
+	width: 8%;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+  }

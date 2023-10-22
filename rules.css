@@ -183,6 +183,30 @@ html {scroll-behavior: smooth; }
 	object-position: bottom right;
 }
 
+  .button {
+	display: inline-block;
+	margin-right: 5%;
+	margin-left: 5%;
+	padding: 15px 25px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	color: #fff; 
+	background-color: #91AAF2;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #CE93D8;
+  }
+  
+  .button:hover {background-color: #91AAF2}
+  
+  .button:active {
+	background-color: #91AAF2;
+	box-shadow: 0 5px #CE93D8;
+	transform: translateY(4px);
+  }
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #91AAF2 #F2BEE4;
@@ -200,3 +224,213 @@ html {scroll-behavior: smooth; }
   border-radius: 20px;
   border: 2px solid #F2BEE4;
 }
+
+/* CONCEPTOBER */
+#art {
+	display: grid;
+	align-items: center;
+	grid-row-gap: 0px;
+	margin: 2em;
+	width: 950px;
+	grid-template-columns:  repeat(4, auto);
+	grid-template-rows: repeat(6, auto);
+	justify-content: center;
+}
+
+#art div.box1{
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+
+#art div.boxa{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#art div.boxb{
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+.box {
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.boxA {
+	display: flex;
+}
+
+.box1 {
+	height: 100%;
+	width: 50%;
+	margin: 1em;
+	justify-content: center;
+    background-color: rgba(145, 170, 242, 0.2);
+}
+
+.grid-container-videos {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 2%;
+}
+
+.grid-container {
+	display: grid;
+	margin: 2%;
+    grid-template-columns: repeat(4, auto);
+    gap: 0.5rem;
+	justify-content: space-evenly;
+}
+
+
+/* PHOTO GRID */
+  
+  .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	margin: 1%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  -ms-flex: 100%;
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 5%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #91a9f294;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 80%;
+	max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	background-color: rgba(242,190,228, 0.5);
+	position: absolute;
+	top: 80px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+	display: none;
+  }
+
+  .thumbnails {
+	margin: auto;
+	width: 25%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	background-color: rgba(242,190,228, 0.5);
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(242,190,228, 1);
+  }
+  
+  img.demo {
+	opacity: 0.6;
+	height: 8%;
+	width: 8%;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+  }
