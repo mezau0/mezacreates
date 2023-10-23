@@ -185,8 +185,7 @@ html {scroll-behavior: smooth; }
 
   .button {
 	display: inline-block;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin: 3%;
 	padding: 15px 25px;
 	font-size: 15px;
 	font-weight: bold;
@@ -273,17 +272,21 @@ html {scroll-behavior: smooth; }
 
 .grid-container-videos {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: row;
 	flex-wrap: wrap;
+	gap: 1%;
 	margin: 2%;
+	justify-content: space-around;
 }
 
 .grid-container {
-	display: grid;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 200vh;
+	gap: 1%;
 	margin: 2%;
-    grid-template-columns: repeat(4, auto);
-    gap: 0.5rem;
-	justify-content: space-evenly;
 }
 
 

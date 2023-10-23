@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name= "description" content="Homepage of the website for mezacreates.">
 		<meta name= "author" content="Luka Meza U">
-		<title> Homepage </title>
+		<title> Meza Creates </title>
 
 		<link href="rules.css" rel="stylesheet">
 
@@ -37,15 +37,13 @@
 
 	h2 {color: slateblue;}
 
-	header {color: #AFA7FF;
-	padding: 0.5em;
-	background-bottom: 1px solid purple;
+	header {
+	color: #AFA7FF;
 	background-image: url(eye.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	text-align: center;
-	margin: auto;
-	margin-top: 0;
+	background-size: 100%;
+	padding: 0.5em;
 } 
 body {
 	background-image: url(shock.png);
@@ -68,6 +66,68 @@ body {
 	justify-content: center;
 }
 
+    /* RESPONSIVE DESIGN */
+
+    /* Mobile */
+    @media screen and (min-width: 320px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 30%; width: 30%;}
+        .modal {padding-top: 40%;}
+		.column {-ms-flex: 25%; flex: 25%; max-width: 25%;}
+    }
+
+    /* iPads & Tablets */
+    @media screen and (min-width: 480px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 15%; width: 15%;}
+        .modal {padding-top: 25%;}
+    }
+/* Lightbox Sizing */
+    @media screen and (min-width: 500px) and (max-width: 599px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 70%;}
+        .modal {padding-top: 15%;}
+    }
+
+/* Lightbox Sizing */
+    @media screen and (min-width: 600px) and (max-width: 699px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 60%;}
+        .modal {padding-top: 20%;}
+    }
+
+/* Lightbox Sizing */
+@media screen and (min-width: 700px) and (max-width: 767px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        .modal {padding-top: 20%;}
+    }
+
+    /* Small screens & Laptops */
+    @media screen and (min-width: 768px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        img.demo {height: 10%; width: 10%;}
+        .thumbnails {width: 30%;}
+        .modal {padding-top: 8%;}
+    }
+
+    /* Desktops & Large Screens */
+    @media screen and (min-width: 1024px) {
+        .lightboxwidth {width: 90%;}
+		.lightboxwidth1 {width: 39%;}
+        .modal {padding-top: 5%;}
+    }
+
+    /* Extra large screens, TVs */
+    @media screen and (min-width: 1200px) {
+        .lightboxwidth {width: 80%;}
+		.lightboxwidth1 {width: 35%;}
+        .modal {padding-top: 5%;}
+    }
+
 	</style>
 
 	</head>
@@ -81,6 +141,7 @@ body {
 		
 					<li class="dropdown"><a>Art</a>
 				 <div class="dropdown-content">
+					<a href="portfolios.html">Portfolios</a>
 				   <a href="art.html"> General </a>
 				   <a href="comics.html"> Comics </a>
 				   <a href="octoberchallenges.html"> October Art Challenges </a>
@@ -91,17 +152,12 @@ body {
 					<a href="kisses.html"> Her/She Kisses</a>
 					<a href="submerged.html"> Submerged</a>
 					<a href="ascenders.html"> The Ascenders</a>
-		
-					<li class="dropdown"><a> Portfolios </a>
-						<div class="dropdown-content">
-							<a href="Portfoliomc.html"> General </a>
-							<a href="Portfolio.html"> Graphic Design </a>
-					</ul>
+				</ul>
 		</nav>
 
 		<div id="main">
 		<header id="home"> <!-- has your header + title-->
-		<br><br><br><h1> mezacreates </h1><br><br><br>
+		<br><br><br><br>
 		<picture>
 		<source media="(min-width: 2400px)" srcset="eye2400.png">
         <source media="(min-width: 1280px)" srcset="i1280.png">
@@ -113,47 +169,48 @@ body {
 
 		<section id="about"> 			
 			<h2> I'm Meza Creates, an illustrator and designer in Brooklyn, New York. </h2>  <!--<em> for emphasis </em> and <u> for underline </u> </p>-->
-			<p> Freelance Graphic Designer & Illustrator: Canva, Adobe Creative Cloud, Clip Studio Paint, Character Design, Web Design, UI, and more! </p>
+			<p> <strong>Freelance Graphic Designer & Illustrator:</strong> Canva, Adobe Creative Cloud, Clip Studio Paint, Character Design, Web Design, UI, and more! </p>
 			<p>	I make art that explores resistance in existence, queer love, and queer joy. I love bold colors and all things fantastical! </p>
 		</section>
 
 			<h2> Featured: </h2>
 
-				<iframe src="https://itch.io/embed/652424?linkback=true&amp;bg_color=9ea79a&amp;link_color=222&amp;border_color=9ea79a" width="552" height="167" frameborder="0"><a href="https://meza-creates.itch.io/the-witchs-hour">The Witch's Hour by Meza_Creates</a></iframe>
+				<iframe src="https://itch.io/embed/652424?linkback=true&amp;bg_color=9ea79a&amp;link_color=222&amp;border_color=9ea79a" width="45%" height="170px" frameborder="0"><a href="https://meza-creates.itch.io/the-witchs-hour" target="_blank">The Witch's Hour by Meza_Creates</a></iframe>
+				<!-- 
+				<a href="octoberchallenges.html" target="_blank"> <img border="5" alt="TikTok" src="img/back.png" width="122rem"> </a>
+				-->
 
 			<h2> Check Out My Work! </h2>
+			
 			<div> 
 				<div class="row"> 
 					<div class="column">
-					  <img src="introart/colorblock1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
-					  <img src="introart/colorblock2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
-					  <img src="introart/ghosts4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					  <img src="introart/colorblock1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					  <img src="introart/colorblock2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					  <img src="introart/ghosts4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
 
 					</div>
 					<div class="column">
-					  <img src="introart/colorblock3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
-					  <img src="introart/colorblock5.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
-					  <img src="introart/ghosts2.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow">
+					  <img src="introart/colorblock3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					  <img src="introart/colorblock5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+					  <img src="introart/ghosts2.png" onclick="openModal();currentSlide(10)" class="hover-shadow">
 
 					</div>  
 					<div class="column">
-					  <img src="introart/colorblock4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
-					  <img src="introart/ghosts1.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
-					  <img src="introart/ghosts3.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow">
+					  <img src="introart/colorblock4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					  <img src="introart/ghosts1.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
+					  <img src="introart/ghosts3.png" onclick="openModal();currentSlide(11)" class="hover-shadow">
 
 					</div>
 					<div class="column">
-					  <img src="introart/colorblock6.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
-					  <img src="introart/ghosts.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+					  <img src="introart/colorblock6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+					  <img src="introart/ghosts.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
 
 					</div>
 				</div>
-				<br><br>
-
-				<button class="button" onclick= "location.href='art.html'"> More Art </button>
-				<button class="button" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdPxzUrXHxXnvQCTY2ADMXmkOY_Qj3hDGjPIf3-fzS-dgXHFw/viewform','_blank')"> Commission Me! </button>
+				<button class="button" onclick= "location.href='art.html'"> More Art! </button>
 				<button class="button" onclick= "location.href='portfolios.html'"> Portfolios </button>
-				<br>
+				<button class="button" onclick=" window.open('https://docs.google.com/forms/d/e/1FAIpQLSdPxzUrXHxXnvQCTY2ADMXmkOY_Qj3hDGjPIf3-fzS-dgXHFw/viewform','_blank')"> Commission Me! </button>
 			</div>
 
 			<!--Lightbox-->
@@ -162,51 +219,51 @@ body {
 				<div class="modal-content">
 			  
 				  <div class="mySlides">
-					<img src="introart/colorblock1.png" style="width:80%">
+					<img src="introart/colorblock1.png" class="lightboxwidth">
 				  </div>
 			  
 				  <div class="mySlides">
-					<img src="introart/colorblock2.png" style="width:80%">
+					<img src="introart/colorblock2.png" class="lightboxwidth">
 				  </div>
 			  
 				  <div class="mySlides">
-					<img src="introart/colorblock3.png" style="width:80%">
+					<img src="introart/colorblock3.png" class="lightboxwidth">
 				</div>
 				
 				  <div class="mySlides">
-					<img src="introart/colorblock4.png" style="width:80%">
+					<img src="introart/colorblock4.png" class="lightboxwidth">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/colorblock5.png" style="width:45%">
+					<img src="introart/colorblock5.png" class="lightboxwidth1">
 				  </div>
 				
 				  <div class="mySlides">
-					<img src="introart/colorblock6.png" style="width:40%">
+					<img src="introart/colorblock6.png" class="lightboxwidth1">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/colorblock7.png" style="width:40%">
+					<img src="introart/colorblock7.png" class="lightboxwidth1">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/ghosts.png" style="width:45%">
+					<img src="introart/ghosts.png" class="lightboxwidth1">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/ghosts1.png" style="width:45%">
+					<img src="introart/ghosts1.png" class="lightboxwidth1">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/ghosts2.png" style="width:45%">
+					<img src="introart/ghosts2.png" class="lightboxwidth1">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/ghosts3.png" style="width:45%">
+					<img src="introart/ghosts3.png" class="lightboxwidth1">
 				  </div>
 
 				  <div class="mySlides">
-					<img src="introart/ghosts4.png" style="width:45%"> 
+					<img src="introart/ghosts4.png" class="lightboxwidth1"> 
 				  </div>
 			  
 				  <!-- Next/previous controls -->
@@ -231,7 +288,7 @@ body {
 
 				</div>
 			  </div>
-<br><br>
+
 			<h2> Where to Find Me: </h2>
 			<p> 
 			<a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank">
@@ -242,13 +299,8 @@ body {
 			
 			<a href="https://www.instagram.com/meza_creates/" target="blank">
 			<img border="0" alt="Instagram" src="pink.png" width="140" height="140">  </a>
-
-			</p>
 			
-			<hr>
-			<p> Note: I strive to make my content as accessible as possible, so if there's anything amiss, 
-				please let me know! You can email me or dm me on social media- contact info in the footer!
-
+			<br><br><br>
 		</div> <!--closes main div-->
 <br>
 <br>
@@ -260,7 +312,6 @@ body {
 		<a href="mailto:mezau0@gmail.com" target="_blank"> Email <img src="email.png" alt="icon" width="20" /></a>
 		<br>
 		<p> This work is liscenced under the Creative Commons Attribution-ShareALike 3.0 License. CC. For questions, comments, or concerns, please email <a href="mailto:mezau0@gmail.com">mezau0@gmail.com</a>. </p>
-		<br>
 	</footer>
 
 <script src="script.js"></script>
