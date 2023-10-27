@@ -7,8 +7,9 @@
 body {
   height: 100vh;
   display: flex;
-  background: indigo;
-	background-image: url(shock.png);
+  background: #301934;
+	background-image: url(img/front1.png);
+  background-size: 20vh;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: bottom right;
