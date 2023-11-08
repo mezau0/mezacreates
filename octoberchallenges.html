@@ -8,7 +8,7 @@
 	<meta name= "author" content="Luka Meza U.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="rules.css" rel="stylesheet">
+	<link href="octoberrules.css" rel="stylesheet">
 
 	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
@@ -28,80 +28,18 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<style>
-
-	p {margin: 15px;}
-
-	h1 {margin: 15px; color: #7A38A6;}
-
-	h2 {margin: 15px; color: #7A38A6;}
-
-    .lightboxwidth {
-        width: 45%;
-    }
-
-    /* RESPONSIVE DESIGN */
-
-    /* Mobile */
-    @media screen and (min-width: 320px) {
-        .lightboxwidth {width: 100%;}
-        img.demo {height: 30%; width: 30%;}
-        .modal {padding-top: 20%;}
-        #MemoryGame {width: 90vw; height: 90vh; background-image: none;
-}
-    }
-
-    /* iPads & Tablets */
-    @media screen and (min-width: 480px) {
-        .lightboxwidth {width: 80%;}
-        img.demo {height: 15%; width: 15%;}
-        .modal {padding-top: 10%;}
-    }
-/* Lightbox Sizing */
-    @media screen and (min-width: 500px) and (max-width: 599px) {
-        .lightboxwidth {width: 80%;}
-        .modal {padding-top: 15%;}
-    }
-
-/* Lightbox Sizing */
-    @media screen and (min-width: 600px) and (max-width: 767px) {
-        .lightboxwidth {width: 80%;}
-        .modal {padding-top: 8%;}
-    }
-
-    /* Small screens & Laptops */
-    @media screen and (min-width: 768px) {
-        .lightboxwidth {width: 60%;}
-        img.demo {height: 10%; width: 10%;}
-        .thumbnails {width: 30%;}
-        .modal {padding-top: 8%;}
-    }
-
-    /* Desktops & Large Screens */
-    @media screen and (min-width: 1024px) {
-        .lightboxwidth {width: 50%;}
-        .modal {padding-top: 5%;}
-    }
-
-    /* Extra large screens, TVs */
-    @media screen and (min-width: 1200px) {
-        .lightboxwidth {width: 45%;}
-        .modal {padding-top: 5%;}
-    }
-
-	</style>
-
 </head>
 
 <body>
+
 <nav id="nav"> <!--This is navigation, a list-->
 			<!-- <ul type="square"> -->
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#contact">Contact</a></li>
 		
 					<li class="dropdown"><a>Art</a>
 				 <div class="dropdown-content">
+					<a href="portfolios.html">Portfolios</a>
 				   <a href="art.html"> General </a>
 				   <a href="comics.html"> Comics </a>
 				   <a href="octoberchallenges.html"> October Art Challenges </a>
@@ -112,220 +50,441 @@
 					<a href="kisses.html"> Her/She Kisses</a>
 					<a href="submerged.html"> Submerged</a>
 					<a href="ascenders.html"> The Ascenders</a>
-		
-					<li class="dropdown"><a> Portfolios </a>
-						<div class="dropdown-content">
-							<a href="Portfoliomc.html"> General </a>
-							<a href="Portfolio.html"> Graphic Design </a>
-					</ul>
+
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 		</nav>
 
 <br><br>
 <h1> October Art Challenges </h1>
 
-<p> Every year for October, I revisit a particular unfinished project by participating in art challenges. Below you can see the evolution of the concept, from just one-off character creation towards a larger narrative.  </p>
+<p> Every year for October, I revisit a particular unfinished project by participating in art challenges. 
+    Below you can see the evolution of the concept, from just one-off character creation towards a larger narrative.  </p>
 
 <h2> 2023 Challenge </h2>
 
-<!-- height="675px" width="900px" -->
+<p> Instead of doing a daily art challenge, for October 2023 I decided to create a small memory game! </p>
+
 <div>
-    <iframe id="MemoryGame" src="memorygame.html" height="675vh" width="80%">
-    </iframe>
+    <iframe id="MemoryGame" src="memorygame.html" height="675vh" width="95%" frameborder="0"></iframe>
   </div>
 <div>
-    <br><button class="button" onClick="refreshPage()"> Restart Game </button> <br><br>
+    <button class="button" onClick="refreshPage()"> Restart Game </button> <br><br>
+</div>
+
+<div>
+    <img src="conceptober23/front1.png" alt="" style="width:15%" onclick="openModal();currentSlide(1)">
+    <img src="conceptober23/front2.png" alt="" style="width:15%" onclick="openModal();currentSlide(2)">
+    <img src="conceptober23/front3.png" alt="" style="width:15%" onclick="openModal();currentSlide(3)">
+    <img src="conceptober23/front4.png" alt="" style="width:15%" onclick="openModal();currentSlide(4)">
+    <img src="conceptober23/front5.png" alt="" style="width:15%" onclick="openModal();currentSlide(5)">
+    <img src="conceptober23/front6.png" alt="" style="width:15%" onclick="openModal();currentSlide(6)">
 </div>
 
 <h2> OC-Tober 2022 </h2>
-<p> OC-Tober is a yearly art challenge spanning the month of October. It was created by <a href="https://www.instagram.com/bweird/" target="_blank"> @bweird </a>. All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>). </p>
+<p> OC-Tober is a yearly art challenge spanning the month of October. 
+    It was created by <a href="https://www.instagram.com/bweird/" target="_blank"> @bweird </a>. 
+    All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>). </p>
 
-<div class="grid-container"> 
-    <img src="conceptober22/1.png" style="height:25%" onclick="openModal();currentSlide(1)" class="hover-shadow">
-    <img src="conceptober22/2.png" style="height:25%" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    <img src="conceptober22/3.png" style="height:25%" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    <img src="conceptober22/4.png" style="height:25%" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    <img src="conceptober22/5.png" style="height:25%" onclick="openModal();currentSlide(5)" class="hover-shadow">
-    <img src="conceptober22/6.png" style="height:25%" onclick="openModal();currentSlide(6)" class="hover-shadow">
-    <img src="conceptober22/7.png" style="height:25%" onclick="openModal();currentSlide(7)" class="hover-shadow">
-    <img src="conceptober22/8.png" style="height:25%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-    <img src="conceptober22/9.png" style="height:25%" onclick="openModal();currentSlide(9)" class="hover-shadow">
-    <img src="conceptober22/10.png" style="height:25%" onclick="openModal();currentSlide(10)" class="hover-shadow">
-    <img src="conceptober22/11.png" style="height:25%" onclick="openModal();currentSlide(11)" class="hover-shadow">
-    <img src="conceptober22/12.png" style="height:25%" onclick="openModal();currentSlide(12)" class="hover-shadow">
+<div> 
+    <div class="row"> 
+        <div class="column">
+          <img src="conceptober22/1.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          <img src="conceptober22/2.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="conceptober22/3.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+          <img src="conceptober22/4.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow">
+        </div>  
+        <div class="column">
+          <img src="conceptober22/5.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow">
+          <img src="conceptober22/6.png" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="conceptober22/7.png" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow">
+            <img src="conceptober22/8.png" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow">
+          </div>
+    </div>
 </div>
-
-<!--Lightbox-->
-<div id="myModal" class="modal">
-<span class="close cursor" onclick="closeModal()">&times;</span>
-<div class="modal-content">
-
-    <div class="mySlides">
-    <img src="conceptober22/1.png" class="lightboxwidth">
+    
+<!-- meme slides-->
+    <div>
+        <img class="mySlides1" src="conceptober22/a.png">
+        <img class="mySlides1" src="conceptober22/b.png">
+        <img class="mySlides1" src="conceptober22/c.png">
+        <img class="mySlides1" src="conceptober22/d.png">
+        <img class="mySlides1" src="conceptober22/e.png">
+        <img class="mySlides1" src="conceptober22/f.png">
+        <img class="mySlides1" src="conceptober22/g.png">
+        <img class="mySlides1" src="conceptober22/h.png">
+        <img class="mySlides1" src="conceptober22/i.png">
+        <img class="mySlides1" src="conceptober22/j.png">
+        <img class="mySlides1" src="conceptober22/k.png">
+        <img class="mySlides1" src="conceptober22/l.png">
+        <img class="mySlides1" src="conceptober22/m.png">
+        <img class="mySlides1" src="conceptober22/n.png">
+      </div>
+      
+      <div class="w3-center">
+        <div class="w3-section">
+          <button class="button" onclick="plusDivs1(-1)">❮ Prev</button>
+          <button class="button" onclick="plusDivs1(1)">Next ❯</button>
+        </div>
+        <button class="demo1" onclick="currentDiv1(1)"><img class="thumbnails1" src="conceptober22/a.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(2)"> <img class="thumbnails1" src="conceptober22/b.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(3)"> <img class="thumbnails1" src="conceptober22/c.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(4)"> <img class="thumbnails1" src="conceptober22/d.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(5)"> <img class="thumbnails1" src="conceptober22/e.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(6)"> <img class="thumbnails1" src="conceptober22/f.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(7)"> <img class="thumbnails1" src="conceptober22/g.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(8)"> <img class="thumbnails1" src="conceptober22/h.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(9)"> <img class="thumbnails1" src="conceptober22/i.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(10)"> <img class="thumbnails1" src="conceptober22/j.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(11)"> <img class="thumbnails1" src="conceptober22/k.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(12)"> <img class="thumbnails1" src="conceptober22/l.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(13)"> <img class="thumbnails1" src="conceptober22/m.png"> </button> 
+        <button class="demo1" onclick="currentDiv1(14)"> <img class="thumbnails1" src="conceptober22/n.png"> </button> 
     </div>
 
-    <div class="mySlides">
-    <img src="conceptober22/2.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/3.png" class="lightboxwidth">
-</div>
-
-    <div class="mySlides">
-    <img src="conceptober22/4.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/5.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/6.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/7.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/8.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/9.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/10.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/11.png" class="lightboxwidth">
-    </div>
-
-    <div class="mySlides">
-    <img src="conceptober22/12.png" class="lightboxwidth"> 
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Thumbnail image controls -->
-    <div class="thumbnails">
-    <img class="demo" src="conceptober22/1.png" onclick="currentSlide(1)" alt="">
-    <img class="demo" src="conceptober22/2.png" onclick="currentSlide(2)" alt="">
-    <img class="demo" src="conceptober22/3.png" onclick="currentSlide(3)" alt="">
-    <img class="demo" src="conceptober22/4.png" onclick="currentSlide(4)" alt="">
-    <img class="demo" src="conceptober22/5.png" onclick="currentSlide(5)" alt="">
-    <img class="demo" src="conceptober22/6.png" onclick="currentSlide(6)" alt="">
-    <img class="demo" src="conceptober22/7.png" onclick="currentSlide(7)" alt="">
-    <img class="demo" src="conceptober22/8.png" onclick="currentSlide(8)" alt="">
-    <img class="demo" src="conceptober22/9.png" onclick="currentSlide(9)" alt="">
-    <img class="demo" src="conceptober22/10.png" onclick="currentSlide(10)" alt="">
-    <img class="demo" src="conceptober22/11.png" onclick="currentSlide(11)" alt="">
-    <img class="demo" src="conceptober22/12.png" onclick="currentSlide(12)" alt="">
-    </div>
-
-</div>
 </div>
 
 <h2> Conceptober 2021 </h2>
 
 <p> Conceptober  was a yearly art challenge spanning the month of October. 
-	It was created by <a href="https://www.instagram.com/melosprout/" target="_blank"> @melosprout </a>, <a href="https://www.instagram.com/nirryc/" target="_blank"> @nirryc </a>, and <a href="https://www.instagram.com/nuvodraws/" target="_blank"> @nuvodraws </a>.
+	It was created by <a href="https://www.instagram.com/melosprout/" target="_blank"> @melosprout </a>,
+     <a href="https://www.instagram.com/nirryc/" target="_blank"> @nirryc </a>, and <a href="https://www.instagram.com/nuvodraws/" target="_blank"> @nuvodraws </a>.
     <br>
-    All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>), with the exception of the background for Day 24 (Greek God) in 2020. Day 24 was a collab between myself and <a href="https://www.instagram.com/cramvisualz/" target="_blank"> @cramvisualz</a>.
+    All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>). </p>
 
-    <div> 
-        <div class="row"> 
-            <div class="column">
-              <img src="conceptober21/1.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
-              <img src="conceptober21/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
-              <img src="conceptober21/3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="conceptober21/4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
-              <img src="conceptober21/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
-              <img src="conceptober21/6.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow">
-            </div>  
-            <div class="column">
-              <img src="conceptober21/7.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
-              <img src="conceptober21/8.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
-              <img src="conceptober21/9.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="conceptober21/10.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
-              <img src="conceptober21/11.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-              <img src="conceptober21/12.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober21/13.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/14.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/15.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober21/16.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/17.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/18.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober21/19.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/20.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/21.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober21/22.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/23.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober21/24.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
+        <div class="box-container1"> 
+              <img src="conceptober21/1.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+              <img src="conceptober21/2.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+              <img src="conceptober21/3.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow">
+              <img src="conceptober21/4.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow">
+              <img src="conceptober21/5.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow">
+              <img src="conceptober21/6.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow">
+              <img src="conceptober21/7.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow">
+              <img src="conceptober21/8.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow">
+              <img src="conceptober21/9.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow">
+              <img src="conceptober21/10.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow">
+              <img src="conceptober21/11.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow">
+              <img src="conceptober21/12.jpg" onclick="openModal();currentSlide(26)" class="hover-shadow">
+                <img src="conceptober21/13.jpg" onclick="openModal();currentSlide(27)" class="hover-shadow">
+                <img src="conceptober21/14.jpg" onclick="openModal();currentSlide(28)" class="hover-shadow">
+                <img src="conceptober21/15.jpg" onclick="openModal();currentSlide(29)" class="hover-shadow">
+                <img src="conceptober21/16.jpg" onclick="openModal();currentSlide(30)" class="hover-shadow">
+                <img src="conceptober21/17.jpg" onclick="openModal();currentSlide(31)" class="hover-shadow">
+                <img src="conceptober21/18.jpg" onclick="openModal();currentSlide(32)" class="hover-shadow">
+                <img src="conceptober21/19.jpg" onclick="openModal();currentSlide(33)" class="hover-shadow">
+                <img src="conceptober21/20.jpg" onclick="openModal();currentSlide(34)" class="hover-shadow">
+                <img src="conceptober21/21.jpg" onclick="openModal();currentSlide(35)" class="hover-shadow">
+                <img src="conceptober21/22.jpg" onclick="openModal();currentSlide(36)" class="hover-shadow">
+                <img src="conceptober21/23.jpg" onclick="openModal();currentSlide(37)" class="hover-shadow">
+                <img src="conceptober21/24.jpg" onclick="openModal();currentSlide(38)" class="hover-shadow">
         </div>
 
     <h2> Conceptober 2020 </h2>
 
+    <p> Conceptober  was a yearly art challenge spanning the month of October. 
+        It was created by <a href="https://www.instagram.com/melosprout/" target="_blank"> @melosprout </a>,
+         <a href="https://www.instagram.com/nirryc/" target="_blank"> @nirryc </a>, and <a href="https://www.instagram.com/nuvodraws/" target="_blank"> @nuvodraws </a>.
+        <br>
+        All art seen here was created by me (<a href="https://www.instagram.com/mezacreates/" target="_blank">@mezacreates</a>), with the exception of the background for Day 24 (Greek God). 
+        Day 24 was a collab between myself and <a href="https://www.instagram.com/cramvisualz/" target="_blank"> @cramvisualz</a>. </p>
+    
+
     <div> 
-        <div class="row"> 
-            <div class="column">
-              <img src="conceptober/1.jpg" alt="" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
-              <img src="conceptober/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
-              <img src="conceptober/3.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="conceptober/4.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
-              <img src="conceptober/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow">
-              <img src="conceptober/6.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow">
-            </div>  
-            <div class="column">
-              <img src="conceptober/7.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
-              <img src="conceptober/8.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow">
-              <img src="conceptober/9.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="conceptober/10.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow">
-              <img src="conceptober/11.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-              <img src="conceptober/12.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober/13.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/14.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/15.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober/16.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/17.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/18.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober/19.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/20.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/21.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
-            <div class="column">
-                <img src="conceptober/22.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/23.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-                <img src="conceptober/24.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow">
-            </div>
+        <div class="box-container1"> 
+              <img src="conceptober/1.jpg" alt="" onclick="openModal();currentSlide(39)" class="hover-shadow1">
+              <img src="conceptober/2.jpg" onclick="openModal();currentSlide(40)" class="hover-shadow1">
+              <img src="conceptober/3.jpg" onclick="openModal();currentSlide(41)" class="hover-shadow1">
+              <img src="conceptober/4.jpg" onclick="openModal();currentSlide(42)" class="hover-shadow1">
+              <img src="conceptober/5.jpg" onclick="openModal();currentSlide(43)" class="hover-shadow1">
+              <img src="conceptober/6.jpg" onclick="openModal();currentSlide(44)" class="hover-shadow1">
+              <img src="conceptober/7.jpg" onclick="openModal();currentSlide(45)" class="hover-shadow1">
+              <img src="conceptober/8.jpg" onclick="openModal();currentSlide(46)" class="hover-shadow1">
+              <img src="conceptober/9.jpg" onclick="openModal();currentSlide(47)" class="hover-shadow1">
+              <img src="conceptober/10.jpg" onclick="openModal();currentSlide(48)" class="hover-shadow1">
+              <img src="conceptober/11.jpg" onclick="openModal();currentSlide(49)" class="hover-shadow1">
+              <img src="conceptober/12.jpg" onclick="openModal();currentSlide(50)" class="hover-shadow1">
+                <img src="conceptober/13.jpg" onclick="openModal();currentSlide(51)" class="hover-shadow1">
+                <img src="conceptober/14.jpg" onclick="openModal();currentSlide(52)" class="hover-shadow1">
+                <img src="conceptober/15.jpg" onclick="openModal();currentSlide(53)" class="hover-shadow1">
+                <img src="conceptober/16.jpg" onclick="openModal();currentSlide(54)" class="hover-shadow1">
+                <img src="conceptober/17.jpg" onclick="openModal();currentSlide(55)" class="hover-shadow1">
+                <img src="conceptober/23.png" onclick="openModal();currentSlide(56)" class="hover-shadow1">
+                <img src="conceptober/18.png" onclick="openModal();currentSlide(57)" class="hover-shadow1">
+                <img src="conceptober/19.png" onclick="openModal();currentSlide(58)" class="hover-shadow1">
+                <img src="conceptober/20.png" onclick="openModal();currentSlide(59)" class="hover-shadow1">
+                <img src="conceptober/21.png" onclick="openModal();currentSlide(60)" class="hover-shadow1">
+                <img src="conceptober/22.png" onclick="openModal();currentSlide(61)" class="hover-shadow1">
         </div>
+    </div>
+
+    <!--Lightbox-->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+    
+        <div class="mySlides">
+        <img src="conceptober23/front1.png" class="lightboxwidth">
+        </div>
+    
+        <div class="mySlides">
+        <img src="conceptober23/front2.png" class="lightboxwidth">
+        </div>
+    
+        <div class="mySlides">
+        <img src="conceptober23/front3.png" class="lightboxwidth">
+        </div>
+    
+        <div class="mySlides">
+        <img src="conceptober23/front4.png" class="lightboxwidth">
+        </div>
+    
+        <div class="mySlides">
+        <img src="conceptober23/front5.png" class="lightboxwidth">
+        </div>
+    
+        <div class="mySlides">
+        <img src="conceptober23/front6.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/1.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/2.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/3.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/4.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/5.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/6.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober22/7.png" class="lightboxwidth">
+        </div>
+        
+        <div class="mySlides">
+        <img src="conceptober22/8.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/1.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/2.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/3.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/4.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/5.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/6.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/7.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/8.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/9.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/10.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/11.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/12.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/13.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/14.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/15.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/16.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/17.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/18.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/19.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/20.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/21.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/22.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/23.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober21/24.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/1.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/2.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/3.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/4.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/5.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/6.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/7.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/8.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/9.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/10.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/11.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/12.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/13.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/14.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/15.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/16.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/17.jpg" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/23.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/18.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/19.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/20.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/21.png" class="lightboxwidth">
+        </div>
+
+        <div class="mySlides">
+            <img src="conceptober/22.png" class="lightboxwidth">
+        </div>
+    
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Thumbnail image controls -->
+        <div class="thumbnails">
+        <img class="demo" src="conceptober23/front1.png" onclick="currentSlide(1)" alt="">
+        <img class="demo" src="conceptober23/front2.png" onclick="currentSlide(2)" alt="">
+        <img class="demo" src="conceptober23/front3.png" onclick="currentSlide(3)" alt="">
+        <img class="demo" src="conceptober23/front4.png" onclick="currentSlide(4)" alt="">
+        <img class="demo" src="conceptober23/front5.png" onclick="currentSlide(5)" alt="">
+        <img class="demo" src="conceptober23/front6.png" onclick="currentSlide(6)" alt="">
+        </div> 
+    </div>
+</div>
 
         <div class="boxA">
         <div class="box1">
@@ -340,20 +499,20 @@
             <strong>Days 8 &#38; 15:</strong> Explorer & Flower Seller <br>
             <strong>Day 10:</strong> Cowboy-Pirate <br>
             <strong>Day 11:</strong> Zombie <br>
-            <strong>Days 12, 13, &#38; 14:</strong> Adore You by Harry Styles <br>
-            <strong>Day 16:</strong> Another One Bites The Dust by Queen <br>
-            <strong>Day 17:</strong> Money, Money, Money by ABBA<br>
-            <strong>Days 18 &#38; 19:</strong> Taurus by Spirit <br>
-            <strong>Day 20:</strong> This Is Berk from How To Train Your Dragon <br>
-            <strong>Day 21:</strong> Skater Boy by Avril Lavigne <br>
-            <strong>Days 22 &#38; 28</b>:</strong> Robot Rock/ Oh Yeah by Daft Punk <br>
-            <strong>Day 23:</strong> Neko Samurai (or Zamurai) Theme Song<br>
-            <strong>Day 24:</strong> Venus by Lady Gaga<br>
-            <strong>Day 25:</strong> Arrow by half&bull;alive<br>
-            <strong>Day 26:</strong> Pink Panther Theme Song<br>
-            <strong>Days 27 &#38; 29:</strong> Pick Your Poison by Black Pistol Fire <br>
-            <strong>Day 30:</strong> 1950 by King Princess <br>
-            <strong>Day 31:</strong> Hacker by Miguel Inzuna <br>
+            <strong>Days 12, 13, &#38; 14:</strong> Artist(ic) Vampire, Gamer <br>
+            <strong>Day 16:</strong> Reapers <br>
+            <strong>Day 17:</strong> Thief <br>
+            <strong>Days 18 &#38; 19:</strong> Elemental & Astrology <br>
+            <strong>Day 20:</strong> Dragon <br>
+            <strong>Day 21:</strong> Skater <br>
+            <strong>Days 22 &#38; 28</b>:</strong> Robot Bookworm <br>
+            <strong>Day 23:</strong> Samurai <br>
+            <strong>Day 24:</strong> Greek God: Aphrodite <br>
+            <strong>Day 25:</strong> Archer <br>
+            <strong>Day 26:</strong> Ninja <br>
+            <strong>Days 27 &#38; 29:</strong> Winged Barkeep <br>
+            <strong>Day 30:</strong> Detective <br>
+            <strong>Day 31:</strong> Hacker <br>
             </p>
         </div>
 
@@ -509,22 +668,9 @@
                 <track src="videos/hacker.vtt" kind="captions" srclang="en" label="English" default>
                 </video>
         </div>
-
-      <p> 
-      <a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank">
-      <img border="0" alt="TikTok" src="shock.png" width= 140 height="140"> </a>
       
-      <a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> 
-      <img border="0" alt="Etsy" src="blue.png" width="140" height="140"> </a>
-      
-      <a href="https://www.instagram.com/meza_creates/" target="blank">
-      <img border="0" alt="Instagram" src="pink.png" width="140" height="140">  </a>
-
-      </p>
-      
-
   </div> <!--closes main div-->
-<br>
+
 <br>
 <footer id="contact">
   <h1> Contact </h1>
@@ -538,6 +684,5 @@
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title> Her/She Kisses </title>
-	<meta name="description" content="UI mockup of a game where you can practice pronoun conjugation.">
+	<meta name="description" content="UI mockup of a horror game.">
 	<meta name= "author" content="Luka Meza U.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,7 +31,7 @@
 	<style>
 
 body {
-	background-image: url(kisses/sprite2.png);
+	background-image: url(kisses/bus.png);
 	background-size: 15%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -43,23 +43,44 @@ body {
 	min-width: 60%;
 		}
 
-p {padding-left: 25px; padding-right: 25px;}		
+p {margin: 0.65rem;}
 
-@media only screen and (max-width: 768px) /*tablets*/
-{
-  * {font-size: 15px;}
+ .mySlides {
+		margin: auto;
+		max-height: 65vh;
+		max-width: 90vw;
+	}
 
-  body {
-	background-image: url(none.png);
-	background-size: 8%;
-	background-repeat: no-repeat;
-	background-position: bottom left;
-	min-width: 40%;
-		}
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-p {padding-left: 5px; padding-right: 5px;}		
+    .image {max-width: 45vw; max-height:50vh; margin: 0.5rem;}
 
- }
+	.demo {
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: #CE93D8;
+	cursor: pointer;
+	border: none;
+  }
+
+  .thumbnails {max-height: 10vh; width: 8vw; margin: 0.25rem;}
+  
+  .demo:hover {background-color: #91AAF2}
+  
+  .demo:active {
+	box-shadow: 0 5px #91AAF2;
+	transform: translateY(4px);
+  }
+
+.hover-shadow {max-height: 50vh; padding: 0.25rem;}
+
+.w3-center {margin: auto; width: 75vw;}
 
 	</style>
 
@@ -67,17 +88,20 @@ p {padding-left: 5px; padding-right: 5px;}
 
 <body>
 
+<div id="page-container">
+    <div id="content-wrap">
+
 <nav id="nav"> <!--This is navigation, a list-->
 			<!-- <ul type="square"> -->
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#contact">Contact</a></li>
 		
 					<li class="dropdown"><a>Art</a>
 				 <div class="dropdown-content">
+					<a href="portfolios.html">Portfolios</a>
 				   <a href="art.html"> General </a>
-				   <a href="conceptober.html"> Conceptober 2020</a>
-				   <a href="conceptober2021.html"> Conceptober 2021</a>
+				   <a href="comics.html"> Comics </a>
+				   <a href="octoberchallenges.html"> October Art Challenges </a>
 		
 				   <li class="dropdown"><a>Games</a>
 					<div class="dropdown-content">
@@ -85,56 +109,71 @@ p {padding-left: 5px; padding-right: 5px;}
 					<a href="kisses.html"> Her/She Kisses</a>
 					<a href="submerged.html"> Submerged</a>
 					<a href="ascenders.html"> The Ascenders</a>
-		
-					<li class="dropdown"><a> Portfolios </a>
-						<div class="dropdown-content">
-							<a href="Portfoliomc.html"> General </a>
-							<a href="Portfolio.html"> Graphic Design </a>
-					</ul>
+
+					<li><a href="#contact">Contact</a></li>
+				</ul>
 		</nav>
-
+<br>
 <h1> Her/She Kisses </h1>
+<img src="kisses/title-pg.png" style="width: 82vw;">
+<h1> COMING SOON! </h1>
 
-<p> Her/She Kisses is a dating sim/grammar tool meant to help people familiarize themselves with using unfamiliar pronoun sets in everyday language. Players choose what pronouns they want to practice and who they want to woo. They're presented with a sentence and fill in the missing pronoun conjugations; if they get it right, that's one step forward. If not, that's one step back. Too many steps back will result in the loss of one heart. Hearts determine your date outcome. Lose all 3 lives, and your date runs you over in the Down With CIS bus. </p>
-<p> Below is the UI mockup of this WIP! </p>
+<p> Her/She Kisses is a dating sim/grammar tool meant to help people  familiarize themselves with using unfamiliar pronoun sets in everyday  language. Players choose what pronouns they want to practice and who  they want to woo. They're presented with a sentence and fill in the  missing pronoun conjugations; if they get it right, that's one step  forward. If not, that's one step back. Too many steps back will result  in the loss of one heart. Hearts determine your date outcome. Lose all 3  lives, and your date runs you over in the Down With CIS bus. </p>
 
-<p>
-    <img src="kisses/kisses2.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses3.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses4.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses5.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses6.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses7.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses8.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses9.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses10.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses11.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses12.png" style="width: 63.8%" alt="g"> </div>
-    <img src="kisses/kisses13.png" style="width: 63.8%" alt="g"> </div>
+<div class="flex">
+    <img class="image" src="kisses/1.png">
+    <img class="image" src="kisses/2.png">
+    <img class="image" src="kisses/3.png">
+    <img class="image" src="kisses/4.png">
+    <img class="image" src="kisses/sprites-archie.png">
+    <img class="image" src="kisses/sprites-bax.png">
+    <img class="image" src="kisses/sprites-cam.png">
+    <img class="image" src="kisses/sprites-emery.png">
+    <img class="image" src="kisses/sprites-harper.png">
+</div>
+
+<h1> Concept </h1>
+	<div>
+        <img class="mySlides" src="kisses/kisses2.png">
+        <img class="mySlides" src="kisses/kisses3.png">
+        <img class="mySlides" src="kisses/kisses4.png">
+        <img class="mySlides" src="kisses/kisses5.png">
+        <img class="mySlides" src="kisses/kisses6.png">
+        <img class="mySlides" src="kisses/kisses7.png">
+        <img class="mySlides" src="kisses/kisses8.png">
+        <img class="mySlides" src="kisses/kisses9.png">
+        <img class="mySlides" src="kisses/kisses10.png">
+        <img class="mySlides" src="kisses/kisses11.png">
+        <img class="mySlides" src="kisses/kisses12.png">
+        <img class="mySlides" src="kisses/kisses13.png">
+    </div>
+      <br>
+      <div class="w3-center">
+        <div class="w3-section">
+          <button class="button" onclick="plusSlides(-1)">❮ Prev</button>
+          <button class="button" onclick="plusSlides(1)">Next ❯</button>
+        </div>
+		<br>
+		<button class="demo" onclick="currentSlide(1)"><img class="thumbnails" src="kisses/kisses2.png"> </button> 
+		<button class="demo" onclick="currentSlide(2)"><img class="thumbnails" src="kisses/kisses3.png"> </button> 
+        <button class="demo" onclick="currentSlide(3)"><img class="thumbnails" src="kisses/kisses4.png"> </button> 
+        <button class="demo" onclick="currentSlide(4)"><img class="thumbnails" src="kisses/kisses5.png"> </button> 
+		<button class="demo" onclick="currentSlide(5)"><img class="thumbnails" src="kisses/kisses6.png"> </button> 
+        <button class="demo" onclick="currentSlide(6)"><img class="thumbnails" src="kisses/kisses7.png"> </button> 
+        <button class="demo" onclick="currentSlide(7)"> <img class="thumbnails" src="kisses/kisses8.png"> </button> 
+        <button class="demo" onclick="currentSlide(8)"> <img class="thumbnails" src="kisses/kisses9.png"> </button> 
+        <button class="demo" onclick="currentSlide(9)"> <img class="thumbnails" src="kisses/kisses10.png"> </button> 
+        <button class="demo" onclick="currentSlide(10)"> <img class="thumbnails" src="kisses/kisses11.png"> </button> 
+        <button class="demo" onclick="currentSlide(11)"> <img class="thumbnails" src="kisses/kisses12.png"> </button> 
+        <button class="demo" onclick="currentSlide(12)"> <img class="thumbnails" src="kisses/kisses13.png"> </button> 
+    </div>
 
 
+	  <br><br>
 
-</p>
+	<script src="script.js"></script>
+</div></div>
 
-	<br>
-	<br>
-	<br>
-	<br>
-
-	<div class="corner2">
-	<a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank">
-	<img border="0" alt="TikTok" src="shock.png" width="90" height="90">
-	</div>
-
-		<div class="corner">
-	<a href="https://www.etsy.com/shop/MezaCreates" target="_blank">
-	<img border="0" alt="Etsy" src="blue.png" width="90" height="90">
-	</div>
-
-		<div class="middle" target="_blank">
-	<a href="https://www.instagram.com/meza_creates/" target="blank">
-	<img border="0" alt="Instagram" src="pink.png" width="90" height="90">
-	</div>
 </body>
 
 </div>

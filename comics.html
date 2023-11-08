@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+	<head> <!-- for search engines, it's not shown on page; info *about* the page-->
+		<meta charset="utf-8">
+		<meta name="keywords" content="index">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "description" content="Homepage of the website for mezacreates.">
+		<meta name= "author" content="Luka Meza U">
+		<title> Comics </title>
+
+		<link href="rules.css" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+	<style>
+h1 {color: #7A38A6;}
+
+.corner {
+	bottom: 0px;
+	margin: 10px;
+	right: 0px;
+	padding-bottom: 0px;
+	position: fixed;
+	object-position: bottom right;
+}
+
+.mySlides, .mySlides1, .mySlides2 {
+		margin: auto;
+		height: 85vh;
+		max-width: 90vw;
+	}
+
+	.demo, .demo1, .demo2 {
+	display: inline-block;
+	margin: 0.5rem;
+	padding: 5px 15px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	color: #fff; 
+	background-color: #91AAF2;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #CE93D8;
+  }
+  
+  .demo:hover, .demo1:hover, .demo2:hover {background-color: #CE93D8}
+  
+  .demo:active,  .demo1:active,  .demo2:active {
+	background-color: #91AAF2;
+	box-shadow: 0 5px #CE93D8;
+	transform: translateY(4px);
+  }
+
+    /* RESPONSIVE DESIGN */
+
+    /* Mobile */
+    @media screen and (min-width: 320px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 30%; width: 30%;}
+        .modal {padding-top: 40%;}
+		.corner {display: none;}
+    }
+
+    /* iPads & Tablets */
+    @media screen and (min-width: 480px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 15%; width: 15%;}
+        .modal {padding-top: 25%;}
+		.corner {display: none;}
+    }
+/* Lightbox Sizing */
+    @media screen and (min-width: 500px) and (max-width: 599px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 70%;}
+        .modal {padding-top: 15%;}
+		.corner {display: none;}
+    }
+
+/* Lightbox Sizing */
+    @media screen and (min-width: 600px) and (max-width: 699px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 60%;}
+        .modal {padding-top: 20%;}
+		.corner {display: none;}
+    }
+
+/* Lightbox Sizing */
+@media screen and (min-width: 700px) and (max-width: 767px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        .modal {padding-top: 20%;}
+		.corner {display: flex;}
+    }
+
+    /* Small screens & Laptops */
+    @media screen and (min-width: 768px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        img.demo {height: 10%; width: 10%;}
+        .thumbnails {width: 30%;}
+        .modal {padding-top: 8%;}
+		.corner {display: flex;}
+    }
+
+    /* Desktops & Large Screens */
+    @media screen and (min-width: 1024px) {
+        .lightboxwidth {width: 90%;}
+		.lightboxwidth1 {width: 39%;}
+        .modal {padding-top: 5%;}
+		.corner {display: flex;}
+    }
+
+    /* Extra large screens, TVs */
+    @media screen and (min-width: 1200px) {
+        .lightboxwidth {width: 80%;}
+		.lightboxwidth1 {width: 35%;}
+        .modal {padding-top: 5%;}
+		.corner {display: flex;}
+    }
+
+	.w3-red,.w3-hover-red:hover{color:#fff!important;background-color:#af87c9!important}
+
+	</style>
+
+	</head>
+
+	<body>
+		
+<div id="page-container">
+    <div id="content-wrap">
+
+<nav id="nav"> <!--This is navigation, a list-->
+			<!-- <ul type="square"> -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+		
+					<li class="dropdown"><a>Art</a>
+				 <div class="dropdown-content">
+					<a href="portfolios.html">Portfolios</a>
+				   <a href="art.html"> General </a>
+				   <a href="comics.html"> Comics </a>
+				   <a href="octoberchallenges.html"> October Art Challenges </a>
+		
+				   <li class="dropdown"><a>Games</a>
+					<div class="dropdown-content">
+					<a href="witchshour.html"> The Witch's Hour</a>
+					<a href="kisses.html"> Her/She Kisses</a>
+					<a href="submerged.html"> Submerged</a>
+					<a href="ascenders.html"> The Ascenders</a>
+
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+		</nav>
+<br>
+			<h1> Arisvarti Deleted Scene: </h1>
+
+			<div>
+				<img class="mySlides" src="comics/arisvarti/1.png">
+				<img class="mySlides" src="comics/arisvarti/2.png">
+				<img class="mySlides" src="comics/arisvarti/3.png">
+				<img class="mySlides" src="comics/arisvarti/4.png">
+				<img class="mySlides" src="comics/arisvarti/5.png">
+				<img class="mySlides" src="comics/arisvarti/6.png">
+				<img class="mySlides" src="comics/arisvarti/7.png">
+				<img class="mySlides" src="comics/arisvarti/8.png">
+				<img class="mySlides" src="comics/arisvarti/9.png">
+				<img class="mySlides" src="comics/arisvarti/10.png">
+				<img class="mySlides" src="comics/arisvarti/11.png">
+				<img class="mySlides" src="comics/arisvarti/12.png">
+				<img class="mySlides" src="comics/arisvarti/13.png">
+			  </div>
+			  
+			  <div class="w3-center">
+				<div class="w3-section">
+				  <button class="button" onclick="plusDivs(-1)">❮ Prev</button>
+				  <button class="button" onclick="plusDivs(1)">Next ❯</button>
+				</div>
+				<button class="demo" onclick="currentDiv(1)">1</button> 
+				<button class="demo" onclick="currentDiv(2)">2</button> 
+				<button class="demo" onclick="currentDiv(3)">3</button> 
+				<button class="demo" onclick="currentDiv(4)">4</button> 
+				<button class="demo" onclick="currentDiv(5)">5</button> 
+				<button class="demo" onclick="currentDiv(6)">6</button> 
+				<button class="demo" onclick="currentDiv(7)">7</button> 
+				<button class="demo" onclick="currentDiv(8)">8</button> 
+				<button class="demo" onclick="currentDiv(9)">9</button> 
+				<button class="demo" onclick="currentDiv(10)">10</button> 
+				<button class="demo" onclick="currentDiv(11)">11</button> 
+				<button class="demo" onclick="currentDiv(12)">12</button> 
+				<button class="demo" onclick="currentDiv(13)">13</button> 
+			</div>
+
+			<br>
+
+			<h1> Zombies: </h1>
+
+			<div>
+				<img class="mySlides1" src="comics/zombies/1.JPG">
+				<img class="mySlides1" src="comics/zombies/2.JPG">
+				<img class="mySlides1" src="comics/zombies/3.JPG">
+				<img class="mySlides1" src="comics/zombies/4.JPG">
+				<img class="mySlides1" src="comics/zombies/5.JPG">
+				<img class="mySlides1" src="comics/zombies/6.JPG">
+				<img class="mySlides1" src="comics/zombies/7.JPG">
+			  </div>
+			  
+			  <div class="w3-center">
+				<div class="w3-section">
+				  <button class="button" onclick="plusDivs1(-1)">❮ Prev</button>
+				  <button class="button" onclick="plusDivs1(1)">Next ❯</button>
+				</div>
+				<button class="demo1" onclick="currentDiv1(1)">1</button> 
+				<button class="demo1" onclick="currentDiv1(2)">2</button> 
+				<button class="demo1" onclick="currentDiv1(3)">3</button> 
+				<button class="demo1" onclick="currentDiv1(4)">4</button> 
+				<button class="demo1" onclick="currentDiv1(5)">5</button> 
+				<button class="demo1" onclick="currentDiv1(6)">6</button> 
+				<button class="demo1" onclick="currentDiv1(7)">7</button>
+			</div>
+
+			<br>
+
+			<h1> Superheroes: </h1>
+
+			<div>
+				<img class="mySlides2" src="comics/superheroes/a1.png">
+				<img class="mySlides2" src="comics/superheroes/a2.png">
+				<img class="mySlides2" src="comics/superheroes/a3.png">
+				<img class="mySlides2" src="comics/superheroes/a4.png">
+				<img class="mySlides2" src="comics/superheroes/a5.png">
+				<img class="mySlides2" src="comics/superheroes/a6.png">
+				<img class="mySlides2" src="comics/superheroes/b1.png">
+				<img class="mySlides2" src="comics/superheroes/b2.png">
+			  </div>
+			  
+			  <div class="w3-center">
+				<div class="w3-section">
+				  <button class="button" onclick="plusDivs2(-1)">❮ Prev</button>
+				  <button class="button" onclick="plusDivs2(1)">Next ❯</button>
+				</div>
+				<button class="demo2" onclick="currentDiv2(1)">1</button> 
+				<button class="demo2" onclick="currentDiv2(2)">2</button> 
+				<button class="demo2" onclick="currentDiv2(3)">3</button> 
+				<button class="demo2" onclick="currentDiv2(4)">4</button> 
+				<button class="demo2" onclick="currentDiv2(5)">5</button> 
+				<button class="demo2" onclick="currentDiv2(6)">6</button> 
+				<button class="demo2" onclick="currentDiv2(7)">7</button>
+				<button class="demo2" onclick="currentDiv2(8)">8</button>
+
+			</div>
+
+			<div class="corner">
+				<img src="generalart/shock.png">
+			</div>
+
+			<br><br><br>
+		</div> <!--closes main div-->
+<br>
+<br>
+	<footer id="contact">
+		<h1> Contact </h1>
+		<a href="https://www.instagram.com/meza_creates/" target="_blank"> Instagram <img src="insta.png" alt="icon" width="20" /></a>
+		<a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> Etsy <img src="etsy.png" alt="icon" width="20" /></a>
+		<a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank"> TikTok <img src="tiktok.png" alt="icon" width="20" /></a>
+		<a href="mailto:mezau0@gmail.com" target="_blank"> Email <img src="email.png" alt="icon" width="20" /></a>
+		<br>
+		<p> This work is liscenced under the Creative Commons Attribution-ShareALike 3.0 License. CC. For questions, comments, or concerns, please email <a href="mailto:mezau0@gmail.com">mezau0@gmail.com</a>. </p>
+	</footer>
+
+<script src="artjava.js"></script>
+
+</div></div>
+	</body>
+</html>

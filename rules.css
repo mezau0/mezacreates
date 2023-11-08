@@ -1,7 +1,26 @@
-* {box-sizing: border-box; 	font-family: OpenDyslexic-Regular;}
+* {
+	box-sizing: border-box;
+	font-family: OpenDyslexic-Regular;
+	scrollbar-width: thin;
+	scrollbar-color: #91AAF2 #F2BEE4;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+	width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+	background: #F2BEE4;
+  }
+  *::-webkit-scrollbar-thumb {
+	background-color: #91AAF2;
+	border-radius: 20px;
+	border: 2px solid #F2BEE4;
+  }
 
 html {
   cursor: url("icon/favicon.ico"), default;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,7 +32,7 @@ body {
 	margin: 0;
 	font-family: "OpenDyslexic-Regular";
 	padding-bottom: 6px;
-		}
+	}
 
 @font-face {
   font-family: OpenDyslexic-Regular;
@@ -23,7 +42,7 @@ body {
 h1 {text-align: center;}
 h2 {text-align: center;}
 h3 {text-align: center;}
-p {text-align: center;}
+p {text-align: center; line-height: 1.5em;}
 div {text-align: center;}
 
 #container {
@@ -36,6 +55,10 @@ div {text-align: center;}
 	border-top: 0;
 	line-height: 1.5em;
 }
+
+#page-container {position: relative; min-height: 100%;}
+  
+#content-wrap {padding-bottom: 13rem; /* Footer height */}
 
 hr {border: 1px solid purple;
 	background-color: purple;
@@ -68,44 +91,36 @@ a:hover {
   color: violet;
 }
 
-html {scroll-behavior: smooth; }
-	p { line-height: 1.5em; }
+/* NAVBAR */
 
 	nav {
+		display: flex;
 		position: fixed;
-		left: 0;
-		top: 0px;
-		height: 3em;
+		float: left;
+		text-align: left;
 		width: 100%;
+		height: auto;
 		color: #fff;
-		background-color: rgba(0, 0, 0, 0.65);
-		border: 1px solid purple;
-		margin: 0;
+		background-color: rgba(122,56,166, 0.5);
 		margin-top: -10px;
-		padding: 0 0 10px 0;
 		z-index: 10;
 		}
 	nav a {
 		text-decoration: none;
-		color: #CE93D8;
+		color: white;
 		}
-	nav a:hover {color: violet;}
+		/* 7A38A6 */
+	nav a:hover {color: #CE93D8;}
 	nav ul {list-style-type: none;}
 	nav ul li {
-		display: inline;
-		margin-top: 0;
+		display: inline-flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
 		padding-left: 10px;
 		padding-right: 10px;
-		border-right: 1px dotted #999;
 		}
 		nav ul li a img {vertical-align: text-bottom;}
 		nav ul li last-child {border-right: none}
-
-	#main {
-		margin-top: 3em;
-		padding: 0 0.5em 0 0.5em;
-		padding-bottom: 100px;
-		}
 
 	header picture img {
 		display: block;
@@ -113,17 +128,15 @@ html {scroll-behavior: smooth; }
 		margin-right: auto;
 		}
 
-
-	section { margin-top: 2px; }
+	#about { margin-top: 2px; }
 
 	footer {
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		width: 100%;
-		background-color: #91AAF2;
+		width: 100vw;
 		text-align: center;
-		border-top: 2px solid purple;
+		background-color: #91AAF2;
 		}
 
 	.dropdown {
@@ -135,57 +148,35 @@ html {scroll-behavior: smooth; }
 	.dropdown-content {
 		display: none;
 		position: absolute;
-		min-width: 13em;
+		right: 0;
+		min-width: 10em;
 		background-color: #91AAF2;
-		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 8px 16px 0px rgba(182, 123, 197, 0.2);
 		z-index: 20;
 		}
 
 	.dropdown-content a {
-		background-color: rgba(0, 0, 0, 0.8);
+		background-color: rgba(182, 123, 197, 0.8);
 		color: white;
 		padding: 0.5em 2em 0.5em 1em;
 		text-decoration: none;
-		border-bottom: 1px solid gray;
+		border-bottom: 1px solid white;
 		display: block;
 		}
 
 	.dropdown:hover .dropdown-content {display: block;}
 
-	/* @media screen and (max-width: 600px) {
-		body { background-color: purple; color: black; }
-		} */
-
-.corner {
-	bottom: 0px;
-	margin: 10px;
-	right: 0px;
-	padding-bottom: 0px;
-	position: fixed;
-	object-position: bottom right;
-}
-
-.middle {
-	bottom: 0px;
-	margin: 10px;
-	right: 90px;
-	padding-bottom: 0px;
-	position: fixed;
-	object-position: bottom right;
-}
-
-.corner2 {
-	bottom: 0px;
-	margin: 10px;
-	right: 180px;
-	padding-bottom: 0px;
-	position: fixed;
-	object-position: bottom right;
+.links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content: center;
 }
 
   .button {
 	display: inline-block;
-	margin: 3%;
+	margin: 2%;
 	padding: 15px 25px;
 	font-size: 15px;
 	font-weight: bold;
@@ -206,70 +197,6 @@ html {scroll-behavior: smooth; }
 	transform: translateY(4px);
   }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #91AAF2 #F2BEE4;
-}
-
-/* Works on Chrome/Edge/Safari */
-*::-webkit-scrollbar {
-  width: 12px;
-}
-*::-webkit-scrollbar-track {
-  background: #F2BEE4;
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #91AAF2;
-  border-radius: 20px;
-  border: 2px solid #F2BEE4;
-}
-
-/* CONCEPTOBER */
-#art {
-	display: grid;
-	align-items: center;
-	grid-row-gap: 0px;
-	margin: 2em;
-	width: 950px;
-	grid-template-columns:  repeat(4, auto);
-	grid-template-rows: repeat(6, auto);
-	justify-content: center;
-}
-
-#art div.box1{
-	grid-column-start: 1;
-	grid-column-end: 5;
-}
-
-#art div.boxa{
-	grid-column-start: 1;
-	grid-column-end: 3;
-}
-
-#art div.boxb{
-	grid-column-start: 3;
-	grid-column-end: 5;
-}
-
-.box {
-	padding: 0;
-	margin-left: 0;
-	margin-right: 0;
-	width: 100%;
-}
-
-.boxA {
-	display: flex;
-}
-
-.box1 {
-	height: 100%;
-	width: 50%;
-	margin: 1em;
-	justify-content: center;
-    background-color: rgba(145, 170, 242, 0.2);
-}
-
 .grid-container-videos {
 	display: flex;
 	flex-direction: row;
@@ -281,14 +208,20 @@ html {scroll-behavior: smooth; }
 
 .grid-container {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	height: 200vh;
-	gap: 1%;
+	flex-direction: row;
+	align-content: center;
+	gap: 2%;
 	margin: 2%;
+	padding-bottom: 1%;
 }
 
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+}
 
 /* PHOTO GRID */
   
@@ -323,14 +256,15 @@ html {scroll-behavior: smooth; }
 	}
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other. 
+  Removed bc I don't like the way it looks lol
   @media screen and (max-width: 600px) {
 	.column {
 	  -ms-flex: 100%;
 	  flex: 100%;
 	  max-width: 100%;
 	}
-  }
+  } */
 
 /* The Modal (background) */
 .modal {
@@ -350,8 +284,8 @@ html {scroll-behavior: smooth; }
 	position: relative;
 	margin: auto;
 	padding: 0;
-	width: 80%;
-	max-width: 1200px;
+	max-width: 75vw;
+	max-height: 85vh;
   }
   
   /* The Close Button */
@@ -387,7 +321,7 @@ html {scroll-behavior: smooth; }
   .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 50vh;
 	width: auto;
 	padding: 16px;
 	margin-top: -50px;

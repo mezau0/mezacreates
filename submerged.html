@@ -8,7 +8,7 @@
 	<meta name= "author" content="Luka Meza U.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="submerged_rules.css" rel="stylesheet">
+	<link href="subrules.css" rel="stylesheet">
 
 	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
@@ -28,21 +28,81 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
+    <style>
+            /* iPads & Tablets */
+    @media screen and (min-width: 480px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 15%; width: 15%;}
+        .modal {padding-top: 25%;}
+        #content-wrap {padding-bottom: 1rem;}
+        footer {height: 1rem;}
+    }
+/* Lightbox Sizing */
+    @media screen and (min-width: 500px) and (max-width: 599px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 70%;}
+        .modal {padding-top: 15%;}
+    }
+
+/* Lightbox Sizing */
+    @media screen and (min-width: 600px) and (max-width: 699px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 60%;}
+        .modal {padding-top: 20%;}
+    }
+
+/* Lightbox Sizing */
+@media screen and (min-width: 700px) and (max-width: 767px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        .modal {padding-top: 20%;}
+    }
+
+    /* Small screens & Laptops */
+    @media screen and (min-width: 768px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        img.demo {height: 10%; width: 10%;}
+        .thumbnails {width: 30%;}
+        .modal {padding-top: 8%;}
+    }
+
+    /* Desktops & Large Screens */
+    @media screen and (min-width: 1024px) {
+        .lightboxwidth {width: 90%;}
+		.lightboxwidth1 {width: 39%;}
+        .modal {padding-top: 5%;}
+    }
+
+    /* Extra large screens, TVs */
+    @media screen and (min-width: 1200px) {
+        .lightboxwidth {width: 80%;}
+		.lightboxwidth1 {width: 35%;}
+        .modal {padding-top: 5%;}
+        #content-wrap {padding-bottom: 12rem;}
+        footer {height: 12rem;}
+    }
+    </style>
+
 </head>
 
 <body>
+
+<div id="page-container">
+    <div id="content-wrap">
 
 <nav id="nav"> <!--This is navigation, a list-->
 			<!-- <ul type="square"> -->
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#contact">Contact</a></li>
 		
 					<li class="dropdown"><a>Art</a>
 				 <div class="dropdown-content">
+					<a href="portfolios.html">Portfolios</a>
 				   <a href="art.html"> General </a>
-				   <a href="conceptober.html"> Conceptober 2020</a>
-				   <a href="conceptober2021.html"> Conceptober 2021</a>
+				   <a href="comics.html"> Comics </a>
+				   <a href="octoberchallenges.html"> October Art Challenges </a>
 		
 				   <li class="dropdown"><a>Games</a>
 					<div class="dropdown-content">
@@ -50,126 +110,113 @@
 					<a href="kisses.html"> Her/She Kisses</a>
 					<a href="submerged.html"> Submerged</a>
 					<a href="ascenders.html"> The Ascenders</a>
-		
-					<li class="dropdown"><a> Portfolios </a>
-						<div class="dropdown-content">
-							<a href="Portfoliomc.html"> General </a>
-							<a href="Portfolio.html"> Graphic Design </a>
-					</ul>
-		</nav>
 
+					<li><a href="#contact">Contact</a></li>
+
+				</ul>
+		</nav>
+<br>
 <h1> Submerged </h1>
 
-<p>Submerged is an underwater dungeon crawler with 3 possible POVs. Each POV takes the player through a different exploration of the world. Adam the human, best for those who want a straightforward dungeon crawler; Vari, the explorer for players interested in the enviornment; and Ula, the jeweler, for those interested in lore and the underwater society. </p>
-<p> Below is some conceptual art, music, and narrative for this WIP! </p>
+<div>
+    <p> Submerged is an underwater dungeon crawler with 3 possible POVs. Each POV takes the player through a different exploration of the world. Adam the human, best for those who want a straightforward dungeon crawler; Vari, the explorer for players interested in the enviornment; and Ula, the jeweler, for those interested in lore and the underwater society. </p>
+    <p> Below is some conceptual art, music, and narrative for this WIP! </p>
+</div>
 
-<h2>Art </h2>
-<p>
-    <img src="submerged/cave.png" style="width: 50%" alt="Underwater bioluminescent cave">
-	<img src="submerged/main2.png" style="width: 50%" alt="Sea floor"> <br>
-	<img src="submerged/s1.png" style="width: 15%" alt="Seashell">
-	<img src="submerged/s2.png" style="width: 15%" alt="Seashell">
-	<img src="submerged/s3.png" style="width: 15%" alt="Seashell"> <br>
-	<img src="submerged/bg1.png" style="width: 20%" alt="Fish">
-	<img src="submerged/bg.png" style="width: 20%" alt="Blowfish">
-</p>
+<div>
+    <img src="submerged/s1.png" alt="Seashell" class="seashell">
+	<img src="submerged/s2.png" alt="Seashell" class="seashell">
+	<img src="submerged/s3.png" alt="Seashell" class="seashell">
+</div>
 
-<h2> Music </h2>
+<div class="music">
+    <h2> Music </h2>
+    <audio controls loop style="width: 80vw;">
+        <source src="submerged/melody.wav" type="audio/mpeg">
+      </audio>
+    
+    <audio src="submerged/melody.wav" preload="auto" loop style="width: 80vw;">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <br>
+    
+      <audio controls loop style="width: 80vw;">
+        <source src="submerged/cave.wav" type="audio/mpeg">
+      </audio>
+    
+    <audio src="submerged/cave.wav" preload="auto" loop style="width: 80vw;">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <br>
+    
+      <audio controls loop style="width: 80vw;">
+        <source src="submerged/gentle.wav" type="audio/mpeg">
+      </audio>
+    
+    <audio src="submerged/gentle.wav" preload="auto" loop style="width: 80vw;">
+        Your browser does not support the <code>audio</code> element.
+    </audio>
+    <br><br>
+</div>
 
-<audio controls loop>
-	<source src="submerged/melody.wav" type="audio/mpeg">
-  </audio>
+<div>
+	<img src="submerged/sasa.png" alt="Sasa" class="big">
+	<img src="submerged/ronen.png" alt="Ronen" class="big">
+    <img src="submerged/tsurva.png" alt="Tsurva" class="big">
+</div>
 
-<audio src="submerged/melody.wav" preload="auto" loop>
-	Your browser does not support the <code>audio</code> element.
-</audio>
-<br>
+<div class="narrative">
+    <h2> Narrative </h2>
+    <p>
+        <em>Ula, the jeweler.  </em> <br>
+        <br>
+        You don't like to brag, but you’re one of the best at what you do. Explorers come from all over the seas with jewels, gems, and trinkets, asking you to create your art with the pieces. It’s a rewarding way to pass the time, and it’s pretty flattering! But your favorite part of it all is the trading.
+        <br> Regular callers mostly just bring you fish, shells, and the like- everyday necessities- but those that travel far usually offer more, and the mystery in that thrills you. 
+        <br> Sometimes they trade some of their own jewelry, or art pieces. Sometimes it’s songs, poems, stories, knowledge. Occasionally, they’ll even bring you trinkets from the human world.
+        <br> One time someone brought a legend.
+        <br>
+        <br>It was one of those rare days where the ocean felt like it had stilled. Tsurva, a close friend, was helping you set up the new space.
+        <br> You used to take calls at your house, when you first started years ago, but weren’t a fan of having so many complete strangers in your living space. With Tsurva’s help, you’d fashioned out an additional space near your home in order to receive traders. 
+        <br> One of these traders wondered in, with the prettiest conch you’d ever seen.
+        <br> Your hands itched with anticipation. <br>
+        <br> <em>...</em>
+        <br>
+        <br> In the days after the trader’s visit, mentions of Sagandzuri started popping up everywhere.  
+    Just as ne had said, the legends of how the cave came to be were abundant, and varied. But everyone could agree that there were wonders in that cave, the likes of which had your fingers twitching. 
+    <br> You try not to pay too much attention to the rumors, leaving them as just that.
+    <br> Tsurva seeks them out.
+    <br>
+    <br> She talks of the explorer fairly often, but that’s normal. 
+    <br> Then she starts exploring on her own-- small things, first bringing you gifts of shells, unusual fish, shiny trinkets. As her skills increase, so does the value in your gifts. 
+    <br> You don’t start to worry until she leaves for longer periods of time, returning with new cuts and injuries. You scold her gently, patch her up, but she just laughs and proudly presents you with more materials. 
+    <br> You have to patch her up more often than you’d like.
+    <br>
+    <br> Talks of the explorer morph into talks of the cave. Often, these follow several lines of discussion. The prestige in finding and traversing Sagandzuri. The treasures you could have at your disposal. The excitement of finding a thing of legend, of sharing it with the world. 
+    <br> You can’t lie- it had thrilled you in equal measures. But out of the two of you, you’d always been the more cautious one, and you urged Tsurva to be careful in her journeys. You worried that, in her excitement, she would become careless one day.
+    <br>She already had the wounds to match.
+    <br> She always promised you she’d take care of herself, roaring with laughter. 
+    <br>
+    <br> The next time you saw her, Tsurva had lost an arm. 
+    <br> She had found Sagandzuri, or at least what she thought was Sagandzuri. Her arm had caught in one of the traps, and-- well. All that was left now was part of her forearm. 
+    <br> You hadn’t know what to say. You had sat inside your house with her, held her shaking body, and the sea felt still once more. 
+    <br> She promised not to return to Sagandzuri. 
+    <br> Talk of the cave stopped. 
+        </p>
 
-  <audio controls loop>
-	<source src="submerged/cave.wav" type="audio/mpeg">
-  </audio>
+        <div class="bubbles">
+            <span style="--left: 0; --delay: 5s; "></span>
+            <span style="--left: 1; --delay: 3s; "></span>
+            <span style="--left: 2; --delay: 2.5s; "></span>
+            <span style="--left: 3; --delay: 5s; "></span>
+            <span style="--left: 4; --delay: 10s; "></span>
+            <span style="--left: 5; --delay: 2s; "></span>
+            <span style="--left: 6; --delay: 6s; "></span>
+            <span style="--left: 7; --delay: 8s; "></span>
+            <span style="--left: 8; --delay: 6.4s; "></span>
+            <span style="--left: 9; --delay: 4s; "></span>
+          </div>
+</div>
 
-<audio src="submerged/cave.wav" preload="auto" loop>
-	Your browser does not support the <code>audio</code> element.
-</audio>
-<br>
-
-  <audio controls loop>
-	<source src="submerged/gentle.wav" type="audio/mpeg">
-  </audio>
-
-<audio src="submerged/gentle.wav" preload="auto" loop>
-	Your browser does not support the <code>audio</code> element.
-</audio>
-
-<h2> Narrative </h2>
-
-<p>
-	<em>Ula, the jeweler.  </em> <br>
-	<br>
-	You don't like to brag, but you’re one of the best at what you do. Explorers come from all over the seas with jewels, gems, and trinkets, asking you to create your art with the pieces. It’s a rewarding way to pass the time, and it’s pretty flattering! But your favorite part of it all is the trading.
-	<br> Regular callers mostly just bring you fish, shells, and the like- everyday necessities- but those that travel far usually offer more, and the mystery in that thrills you. 
-	<br> Sometimes they trade some of their own jewelry, or art pieces. Sometimes it’s songs, poems, stories, knowledge. Occasionally, they’ll even bring you trinkets from the human world.
-	<br> One time someone brought a legend.
-	<br>
-	<br>It was one of those rare days where the ocean felt like it had stilled. Tsurva, a close friend, was helping you set up the new space.
-	<br> You used to take calls at your house, when you first started years ago, but weren’t a fan of having so many complete strangers in your living space. With Tsurva’s help, you’d fashioned out an additional space near your home in order to receive traders. 
-	<br> One of these traders wondered in, with the prettiest conch you’d ever seen.
-	<br> Your hands itched with anticipation. <br>
-	<br> <em>...</em>
-	<br>
-	<br> In the days after the trader’s visit, mentions of Sagandzuri started popping up everywhere.  
-Just as ne had said, the legends of how the cave came to be were abundant, and varied. But everyone could agree that there were wonders in that cave, the likes of which had your fingers twitching. 
-<br> You try not to pay too much attention to the rumors, leaving them as just that.
-<br> Tsurva seeks them out.
-<br>
-<br> She talks of the explorer fairly often, but that’s normal. 
-<br> Then she starts exploring on her own-- small things, first bringing you gifts of shells, unusual fish, shiny trinkets. As her skills increase, so does the value in your gifts. 
-<br> You don’t start to worry until she leaves for longer periods of time, returning with new cuts and injuries. You scold her gently, patch her up, but she just laughs and proudly presents you with more materials. 
-<br> You have to patch her up more often than you’d like.
-<br>
-<br> Talks of the explorer morph into talks of the cave. Often, these follow several lines of discussion. The prestige in finding and traversing Sagandzuri. The treasures you could have at your disposal. The excitement of finding a thing of legend, of sharing it with the world. 
-<br> You can’t lie- it had thrilled you in equal measures. But out of the two of you, you’d always been the more cautious one, and you urged Tsurva to be careful in her journeys. You worried that, in her excitement, she would become careless one day.
-<br>She already had the wounds to match.
-<br> She always promised you she’d take care of herself, roaring with laughter. 
-<br>
-<br> The next time you saw her, Tsurva had lost an arm. 
-<br> She had found Sagandzuri, or at least what she thought was Sagandzuri. Her arm had caught in one of the traps, and-- well. All that was left now was part of her forearm. 
-<br> You hadn’t know what to say. You had sat inside your house with her, held her shaking body, and the sea felt still once more. 
-<br> She promised not to return to Sagandzuri. 
-<br> Talk of the cave stopped. 
-	</p>
-
-<div class="bubbles">
-    <span style="--left: 0; --delay: 5s; "></span>
-    <span style="--left: 1; --delay: 3s; "></span>
-    <span style="--left: 2; --delay: 2.5s; "></span>
-    <span style="--left: 3; --delay: 5s; "></span>
-    <span style="--left: 4; --delay: 10s; "></span>
-    <span style="--left: 5; --delay: 2s; "></span>
-    <span style="--left: 6; --delay: 6s; "></span>
-    <span style="--left: 7; --delay: 8s; "></span>
-    <span style="--left: 8; --delay: 6.4s; "></span>
-    <span style="--left: 9; --delay: 4s; "></span>
-  </div>
-
-	<br>
-
-	<div class="corner2">
-	<a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank">
-	<img border="0" class="big" alt="TikTok" src="submerged/tsurva.png">
-
-	</div>
-
-		<div class="corner">
-	<a href="https://www.etsy.com/shop/MezaCreates" target="_blank">
-	<img border="0" class="big" alt="Etsy" src="submerged/sasa.png">
-	</div>
-
-		<div class="middle" target="_blank">
-	<a href="https://www.instagram.com/meza_creates/" target="blank">
-	<img border="0" class="big" alt="Instagram" src="submerged/ronen.png">
-	</div>
 </body>
 
 </div>
@@ -183,5 +230,6 @@ Just as ne had said, the legends of how the cave came to be were abundant, and v
 		<p> This work is liscenced under the Creative Commons Attribution-ShareALike 3.0 License. CC. For questions, please email <a href="mailto:mezau0@gmail.com">mezau0@gmail.com</a>. </p>
 		<br>
 	</footer>
-
+</div>
+</div>
 </html>

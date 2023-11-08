@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+	<head> <!-- for search engines, it's not shown on page; info *about* the page-->
+		<meta charset="utf-8">
+		<meta name="keywords" content="index">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name= "description" content="Homepage of the website for mezacreates.">
+		<meta name= "author" content="Luka Meza U">
+		<title> Portfolios </title>
+
+		<link href="rules.css" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+		<link rel="manifest" href="icon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+	<style>
+	
+	h1 {color: #7A38A6;}
+
+	.mySlides, .mySlides1 {
+		margin: auto;
+		height: 80vh;
+	}
+
+	.demo, .demo1 {margin: 0.35vh; width: 22vw; background-color: #CE93D8; border: 0; padding: 0;}
+	.demo:hover, .demo1:hover {background-color: #91AAF2;}
+	.demo:active, .demo1:active {transform: translateY(4px);}
+	.thumbnails, .thumbnails1 {width: 22vw;}
+
+.w3-center {margin: auto; width: 75vw;}
+
+    /* RESPONSIVE DESIGN */
+
+    /* Mobile */
+    @media screen and (min-width: 320px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 30%; width: 30%;}
+        .modal {padding-top: 40%;}
+		.mySlides, .mySlides1 {margin: auto; margin-bottom: 1rem; width: 90vw; height: 100%;}
+	}
+
+    /* iPads & Tablets */
+    @media screen and (min-width: 480px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 80%;}
+        img.demo {height: 15%; width: 15%;}
+        .modal {padding-top: 25%;}
+		.mySlides, .mySlides1 {margin: auto; margin-bottom: 1rem; width: 90vw; height: 100%;}
+    }
+/* Lightbox Sizing */
+    @media screen and (min-width: 500px) and (max-width: 599px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 70%;}
+        .modal {padding-top: 15%;}
+    }
+
+/* Lightbox Sizing */
+    @media screen and (min-width: 600px) and (max-width: 699px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 60%;}
+        .modal {padding-top: 20%;}
+    }
+
+/* Lightbox Sizing */
+@media screen and (min-width: 700px) and (max-width: 767px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        .modal {padding-top: 20%;}
+    }
+
+    /* Small screens & Laptops */
+    @media screen and (min-width: 768px) {
+        .lightboxwidth {width: 100%;}
+		.lightboxwidth1 {width: 50%;}
+        img.demo {height: 10%; width: 10%;}
+        .modal {padding-top: 8%;}
+		.mySlides, .mySlides1 {margin: auto; margin-bottom: 1rem; width: 80vw; height: 100%;}
+    }
+
+	@media screen and (min-width: 900px) {
+		.mySlides, .mySlides1 {margin: auto; margin-bottom: 0.2rem; width: 70vw; height: 100%;}
+	}
+
+    /* Desktops & Large Screens */
+    @media screen and (min-width: 1024px) {
+        .lightboxwidth {width: 90%;}
+		.lightboxwidth1 {width: 39%;}
+        .modal {padding-top: 5%;}
+		.mySlides, .mySlides1 {margin: auto; margin-bottom: 0.2rem; width: 60vw; height: 100%;}
+    }
+
+    /* Extra large screens, TVs */
+    @media screen and (min-width: 1200px) {
+        .lightboxwidth {width: 70%;}
+		.lightboxwidth1 {width: 35%;}
+        .modal {padding-top: 5%;}
+		.mySlides, .mySlides1 {margin: auto; margin-bottom: 0.2rem; width: 50vw; height: 100%;}
+    }
+
+	</style>
+
+	</head>
+
+	<body>
+		
+<div id="page-container">
+<div id="content-wrap">
+
+<nav id="nav"> <!--This is navigation, a list-->
+			<!-- <ul type="square"> -->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+		
+					<li class="dropdown"><a>Art</a>
+				 <div class="dropdown-content">
+					<a href="portfolios.html">Portfolios</a>
+				   <a href="art.html"> General </a>
+				   <a href="comics.html"> Comics </a>
+				   <a href="octoberchallenges.html"> October Art Challenges </a>
+		
+				   <li class="dropdown"><a>Games</a>
+					<div class="dropdown-content">
+					<a href="witchshour.html"> The Witch's Hour</a>
+					<a href="kisses.html"> Her/She Kisses</a>
+					<a href="submerged.html"> Submerged</a>
+					<a href="ascenders.html"> The Ascenders</a>
+
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+		</nav>
+<br><br>
+			<h1> Art Portfolio: </h1>
+			
+			<div>
+				<img class="mySlides" src="art/1.png">
+				<img class="mySlides" src="art/2.jpg">
+				<img class="mySlides" src="art/3.png">
+				<img class="mySlides" src="art/4.png">
+				<img class="mySlides" src="art/5.jpg">
+				<img class="mySlides" src="art/6.png">
+				<img class="mySlides" src="art/7.png">
+				<img class="mySlides" src="art/8.png">
+				<img class="mySlides" src="art/9.png">
+				<img class="mySlides" src="art/10.png">
+				<img class="mySlides" src="art/11.png">
+				<img class="mySlides" src="art/12.png">
+				<img class="mySlides" src="art/13.png">
+				<img class="mySlides" src="art/14.png">
+				<img class="mySlides" src="art/15.png">
+				<img class="mySlides" src="art/16.jpg">
+			  </div>
+			  <div class="w3-center">
+				<div class="w3-section">
+				  <button class="button" onclick="plusDivs(-1)">❮ Prev</button>
+				  <button class="button" onclick="plusDivs(1)">Next ❯</button>
+				</div>
+				<br>
+				<button class="demo" onclick="currentDiv(1)"><img class="thumbnails" src="art/1.png"> </button> 
+				<button class="demo" onclick="currentDiv(2)"><img class="thumbnails" src="art/2.jpg"> </button> 
+				<button class="demo" onclick="currentDiv(3)"><img class="thumbnails" src="art/3.png"> </button> 
+				<button class="demo" onclick="currentDiv(4)"><img class="thumbnails" src="art/4.png"> </button> 
+				<button class="demo" onclick="currentDiv(5)"><img class="thumbnails" src="art/5.jpg"> </button> 
+				<button class="demo" onclick="currentDiv(6)"><img class="thumbnails" src="art/6.png"> </button> 
+				<button class="demo" onclick="currentDiv(7)"> <img class="thumbnails" src="art/7.png"> </button> 
+				<button class="demo" onclick="currentDiv(8)"> <img class="thumbnails" src="art/8.png"> </button> 
+				<button class="demo" onclick="currentDiv(9)"> <img class="thumbnails" src="art/9.png"> </button> 
+				<button class="demo" onclick="currentDiv(10)"> <img class="thumbnails" src="art/10.png"> </button> 
+				<button class="demo" onclick="currentDiv(11)"> <img class="thumbnails" src="art/11.png"> </button> 
+				<button class="demo" onclick="currentDiv(12)"> <img class="thumbnails" src="art/12.png"> </button> 
+				<button class="demo" onclick="currentDiv(15)"> <img class="thumbnails" src="art/13.png"> </button> 
+				<button class="demo" onclick="currentDiv(16)"> <img class="thumbnails" src="art/14.png"> </button> 
+				<button class="demo" onclick="currentDiv(17)"> <img class="thumbnails" src="art/15.png"> </button> 
+				<button class="demo" onclick="currentDiv(18)"> <img class="thumbnails" src="art/16.jpg"> </button> 
+			</div>
+
+			  <h1> Design Portfolio: </h1>
+
+			  <div>
+				<img class="mySlides1" src="design/2.png">
+				<img class="mySlides1" src="design/3.png">
+				<img class="mySlides1" src="design/4.png">
+				<img class="mySlides1" src="design/5.png">
+				<img class="mySlides1" src="design/6.png">
+				<img class="mySlides1" src="design/7.png">
+				<img class="mySlides1" src="design/8.png">
+				<img class="mySlides1" src="design/9.png">
+				<img class="mySlides1" src="design/10.png">
+				<img class="mySlides1" src="design/11.png">
+				<img class="mySlides1" src="design/12.png">
+				<img class="mySlides1" src="design/13.png">
+				<img class="mySlides1" src="design/14.png">
+				<img class="mySlides1" src="design/15.png">
+				<img class="mySlides1" src="design/16.png">
+			  </div>
+			  <div class="w3-center">
+				<div class="w3-section">
+				  <button class="button" onclick="plusDivs1(-1)">❮ Prev</button>
+				  <button class="button" onclick="plusDivs1(1)">Next ❯</button>
+				</div>
+				<br>
+				<button class="demo1" onclick="currentDiv1(1)"><img class="thumbnails1" src="design/2.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(2)"><img class="thumbnails1" src="design/3.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(3)"><img class="thumbnails1" src="design/4.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(4)"><img class="thumbnails1" src="design/5.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(5)"><img class="thumbnails1" src="design/6.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(6)"> <img class="thumbnails1" src="design/7.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(7)"> <img class="thumbnails1" src="design/8.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(8)"> <img class="thumbnails1" src="design/9.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(9)"> <img class="thumbnails1" src="design/10.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(10)"> <img class="thumbnails1" src="design/11.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(11)"> <img class="thumbnails1" src="design/12.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(12)"> <img class="thumbnails1" src="design/13.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(13)"> <img class="thumbnails1" src="design/14.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(14)"> <img class="thumbnails1" src="design/15.png"> </button> 
+				<button class="demo1" onclick="currentDiv1(15)"> <img class="thumbnails1" src="design/16.png"> </button> 
+			</div>
+
+				</div>
+			  </div>
+			
+			<br><br>
+		</div> <!--closes main div-->
+<br>
+<br>
+	<footer id="contact">
+		<h1> Contact </h1>
+		<a href="https://www.instagram.com/meza_creates/" target="_blank"> Instagram <img src="insta.png" alt="icon" width="20" /></a>
+		<a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> Etsy <img src="etsy.png" alt="icon" width="20" /></a>
+		<a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank"> TikTok <img src="tiktok.png" alt="icon" width="20" /></a>
+		<a href="mailto:mezau0@gmail.com" target="_blank"> Email <img src="email.png" alt="icon" width="20" /></a>
+		<br>
+		<p> This work is liscenced under the Creative Commons Attribution-ShareALike 3.0 License. CC. For questions, comments, or concerns, please email <a href="mailto:mezau0@gmail.com">mezau0@gmail.com</a>. </p>
+	</footer>
+
+<script src="artjava.js"></script>
+
+</div></div>
+	</body>
+</html>

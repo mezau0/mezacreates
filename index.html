@@ -45,6 +45,7 @@
 	background-size: 100%;
 	padding: 0.5em;
 } 
+
 body {
 	background-image: url(shock.png);
 	background-repeat: no-repeat;
@@ -55,16 +56,7 @@ body {
 	padding-bottom: 10px;
 	padding-top: 0px;
 	min-height: 100%;
-		}
-
-		#art {
-	display: grid;
-	margin: 2em;
-	width: 1200px;
-	grid-template-columns:  repeat(3, auto);
-	grid-template-rows: repeat(6, auto);
-	justify-content: center;
-}
+	}
 
     /* RESPONSIVE DESIGN */
 
@@ -75,6 +67,7 @@ body {
         img.demo {height: 30%; width: 30%;}
         .modal {padding-top: 40%;}
 		.column {-ms-flex: 25%; flex: 25%; max-width: 25%;}
+		#content-wrap {padding-bottom: 17rem; /* Footer height */}
     }
 
     /* iPads & Tablets */
@@ -83,12 +76,14 @@ body {
 		.lightboxwidth1 {width: 80%;}
         img.demo {height: 15%; width: 15%;}
         .modal {padding-top: 25%;}
+		#content-wrap {padding-bottom: 15rem; /* Footer height */}
     }
 /* Lightbox Sizing */
     @media screen and (min-width: 500px) and (max-width: 599px) {
         .lightboxwidth {width: 100%;}
 		.lightboxwidth1 {width: 70%;}
         .modal {padding-top: 15%;}
+		#content-wrap {padding-bottom: 13rem; /* Footer height */}
     }
 
 /* Lightbox Sizing */
@@ -96,6 +91,7 @@ body {
         .lightboxwidth {width: 100%;}
 		.lightboxwidth1 {width: 60%;}
         .modal {padding-top: 20%;}
+		#content-wrap {padding-bottom: 13rem; /* Footer height */}
     }
 
 /* Lightbox Sizing */
@@ -103,6 +99,7 @@ body {
         .lightboxwidth {width: 100%;}
 		.lightboxwidth1 {width: 50%;}
         .modal {padding-top: 20%;}
+		#content-wrap {padding-bottom: 12rem; /* Footer height */}
     }
 
     /* Small screens & Laptops */
@@ -112,6 +109,7 @@ body {
         img.demo {height: 10%; width: 10%;}
         .thumbnails {width: 30%;}
         .modal {padding-top: 8%;}
+		#content-wrap {padding-bottom: 11rem; /* Footer height */}
     }
 
     /* Desktops & Large Screens */
@@ -119,6 +117,7 @@ body {
         .lightboxwidth {width: 90%;}
 		.lightboxwidth1 {width: 39%;}
         .modal {padding-top: 5%;}
+		#content-wrap {padding-bottom: 11rem; /* Footer height */}
     }
 
     /* Extra large screens, TVs */
@@ -126,6 +125,7 @@ body {
         .lightboxwidth {width: 80%;}
 		.lightboxwidth1 {width: 35%;}
         .modal {padding-top: 5%;}
+		#content-wrap {padding-bottom: 11rem; /* Footer height */}
     }
 
 	</style>
@@ -133,6 +133,10 @@ body {
 	</head>
 
 	<body>
+		
+<div id="page-container">
+<div id="content-wrap">
+
 <nav id="nav"> <!--This is navigation, a list-->
 			<!-- <ul type="square"> -->
 				<ul>
@@ -143,21 +147,19 @@ body {
 					<a href="portfolios.html">Portfolios</a>
 				   <a href="art.html"> General </a>
 				   <a href="comics.html"> Comics </a>
-				   <a href="octoberchallenges.html"> October Art Challenges </a>
+				   <a href="octoberchallenges.html"> October Art Challenges </a> </div>
 		
 				   <li class="dropdown"><a>Games</a>
 					<div class="dropdown-content">
 					<a href="witchshour.html"> The Witch's Hour</a>
 					<a href="kisses.html"> Her/She Kisses</a>
 					<a href="submerged.html"> Submerged</a>
-					<a href="ascenders.html"> The Ascenders</a>
+					<a href="ascenders.html"> The Ascenders</a> </div>
 
 					<li><a href="#contact">Contact</a></li>
-
 				</ul>
 		</nav>
 
-		<div id="main">
 		<header id="home"> <!-- has your header + title-->
 		<br><br><br><br>
 		<picture>
@@ -169,7 +171,7 @@ body {
         </picture> 
 		</header>
 
-		<section id="about"> 			
+		<section id="about">
 			<h2> I'm Meza Creates, an illustrator and designer in Brooklyn, New York. </h2>  <!--<em> for emphasis </em> and <u> for underline </u> </p>-->
 			<p> <strong>Freelance Graphic Designer & Illustrator:</strong> Canva, Adobe Creative Cloud, Clip Studio Paint, Character Design, Web Design, UI, and more! </p>
 			<p>	I make art that explores resistance in existence, queer love, and queer joy. I love bold colors and all things fantastical! </p>
@@ -292,20 +294,17 @@ body {
 			  </div>
 
 			<h2> Where to Find Me: </h2>
-			<p> 
+			<div class="links"> 
 			<a href="https://www.tiktok.com/@mezacreates?lang=en" target="_blank">
-			<img border="0" alt="TikTok" src="shock.png" width= 140 height="140"> </a>
+			<img border="0" alt="TikTok" src="shock.png" width= 140 height="140"> <br> Tiktok <br> </a>
 			
 			<a href="https://www.etsy.com/shop/MezaCreates" target="_blank"> 
-			<img border="0" alt="Etsy" src="blue.png" width="140" height="140"> </a>
+			<img border="0" alt="Etsy" src="blue.png" width="140" height="140"> <br> Etsy <br> </a>
 			
 			<a href="https://www.instagram.com/meza_creates/" target="blank">
-			<img border="0" alt="Instagram" src="pink.png" width="140" height="140">  </a>
-			
-			<br><br><br>
-		</div> <!--closes main div-->
-<br>
-<br>
+			<img border="0" alt="Instagram" src="pink.png" width="140" height="140"> <br> Instagram <br>  </a>
+			</div>
+
 	<footer id="contact">
 		<h1> Contact </h1>
 		<a href="https://www.instagram.com/meza_creates/" target="_blank"> Instagram <img src="insta.png" alt="icon" width="20" /></a>
@@ -318,5 +317,6 @@ body {
 
 <script src="script.js"></script>
 
+</div></div>
 	</body>
 </html>

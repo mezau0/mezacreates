@@ -116,6 +116,15 @@ html {scroll-behavior: smooth; }
 
 hr {color: #0B8C75;}
 
+.grid-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	gap: 2%;
+	margin: 2%;
+}
+
 .audio {
 	margin: 10px;
 	left: 20px;

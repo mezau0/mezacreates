@@ -1,0 +1,413 @@
+* {
+	box-sizing: border-box;
+	font-family: OpenDyslexic-Regular;
+	scrollbar-width: thin;
+	scrollbar-color: #BF472C #F2762E;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+	width: 12px;
+  }
+  *::-webkit-scrollbar-track {
+	background: #F2762E;
+  }
+  *::-webkit-scrollbar-thumb {
+	background-color: #BF472C;
+	border-radius: 20px;
+	border: 2px solid #F2762E;
+  }
+
+html {
+  cursor: url("icon/favicon.ico"), default;
+  scroll-behavior: smooth;
+}
+
+body {
+	background-color: #9E65A6;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center right;
+	position: relative;
+	margin: 0;
+	font-family: "OpenDyslexic-Regular";
+	padding-bottom: 6px;
+	}
+
+@font-face {
+  font-family: OpenDyslexic-Regular;
+  src: url(OpenDyslexic-Regular.otf);
+}
+
+h1 {text-align: center; color: #F2762E; margin: 15px;}
+h2 {text-align: center; color: #383673; margin: 15px;}
+h3 {text-align: center;}
+p {text-align: center; line-height: 1.5em; margin: 15px;}
+div {text-align: center;}
+
+a {
+  font-weight: bold;
+  color: #69BF41;
+  text-decoration: none;
+  border: 0px;
+}
+a:hover {
+  color: #F2762E;
+}
+
+/* NAVBAR */
+	nav {
+		display: flex;
+		position: fixed;
+		float: left;
+		text-align: left;
+		width: 100%;
+		height: auto;
+		color: #fff;
+		background-color: rgba(122,56,166, 0.5);
+		margin-top: -10px;
+		z-index: 10;
+		}
+	nav a {
+		text-decoration: none;
+		color: white;
+		}
+		/* 7A38A6 */
+	nav a:hover {color: #383673;}
+	nav ul {list-style-type: none;}
+	nav ul li {
+		display: inline-flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+		nav ul li a img {vertical-align: text-bottom;}
+		nav ul li last-child {border-right: none}
+
+	footer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100vw;
+		text-align: center;
+		background-color: #BF472C;
+		}
+
+	.dropdown {
+		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		right: 0;
+		min-width: 10em;
+		box-shadow: 0px 8px 16px 0px rgba(182, 123, 197, 0.2);
+		z-index: 20;
+		}
+
+	.dropdown-content a {
+		background-color: rgba(182, 123, 197, 0.8);
+		color: white;
+		padding: 0.5em 2em 0.5em 1em;
+		text-decoration: none;
+		border-bottom: 1px solid white;
+		display: block;
+		}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+  .button {
+	display: inline-block;
+	margin: 2%;
+	padding: 15px 25px;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	color: #fff; 
+	background-color: #F2762E;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #BF472C;
+  }
+  
+  .button:hover {background-color: #BF472C}
+  
+  .button:active {
+	background-color: #F2762E;
+	box-shadow: 0 5px #BF472C;
+	transform: translateY(4px);
+  }
+
+.grid-container-videos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1%;
+	margin: 2%;
+	justify-content: space-around;
+}
+
+/* PHOTO GRID */
+  
+  .row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	margin: 1%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+
+   /* Responsive layout - makes a two column-layout instead of four columns */
+   @media screen and (max-width: 800px) {
+	.column {
+	  -ms-flex: 50%;
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  .column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 5%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #91a9f294;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	max-width: 75vw;
+	max-height: 85vh;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	background-color: rgba(242,190,228, 0.5);
+	position: absolute;
+	top: 80px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #383673;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+	display: none;
+  }
+
+  .thumbnails {
+	display: none;
+	margin: auto;
+	width: 25%;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50vh;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	background-color: rgba(242,190,228, 0.5);
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+
+  /* Position the "prev button" to the left */
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(242,190,228, 1);
+  }
+  
+  img.demo {
+	opacity: 0.6;
+	height: 8%;
+	width: 8%;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
+  
+  img.hover-shadow {
+	transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.75);
+  }
+
+  .box-container1 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    max-width: 90%;
+    padding: 1%;
+    margin: auto;
+}
+
+.mySlides1 {
+		display: inline-block;
+		margin: auto;
+		height: 50vh;
+		max-width: 90vw;
+	}
+
+	.demo1 {
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: #BF472C;
+	cursor: pointer;
+	border: none;
+  }
+
+
+  .thumbnails1 {max-height: 10vh; max-width: 10vw;}
+  
+  .demo:hover, .demo1:hover, .demo2:hover {background-color: #F2762E}
+  
+  .demo:active,  .demo1:active,  .demo2:active {
+	box-shadow: 0 5px #BF472C;
+	transform: translateY(4px);
+  }
+
+.hover-shadow1 {max-height: 60vh; max-width: 28vw; padding: 0.25rem;}
+
+    .boxA {
+	display: flex;
+}
+
+.box1 {
+	height: 100%;
+	width: 50%;
+	margin: 1em;
+	justify-content: center;
+    background-color: rgba(145, 170, 242, 0.2);
+}
+
+    .lightboxwidth {
+        width: 45%;
+    }
+
+    /* RESPONSIVE DESIGN */
+
+    /* Mobile */
+    @media screen and (min-width: 320px) {
+        .lightboxwidth {width: 100%;}
+        img.demo {height: 30%; width: 30%;}
+        .modal {padding-top: 20vh;}
+        #MemoryGame {width: 100vw; height: 90vh;}
+        .memewidth {width: 85%;}
+		.hover-shadow {max-height: 25vh; padding: 0.2rem;}
+    }
+
+    /* iPads & Tablets */
+    @media screen and (min-width: 480px) {
+        .lightboxwidth {width: 80%;}
+        img.demo {height: 15%; width: 15%;}
+        .modal {padding-top: 10%;}
+        #MemoryGame {width: 475px; height: 675px;}
+        .memewidth {width: 80%;}
+    }
+/* Lightbox Sizing */
+    @media screen and (min-width: 500px) and (max-width: 599px) {
+        .lightboxwidth {width: 80%;}
+        .modal {padding-top: 15vh;}
+        #MemoryGame {width: 95%; height: 675px;}
+        .memewidth {width: 75%;}
+    }
+
+/* Lightbox Sizing */
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+        .lightboxwidth {width: 80%;}
+        .modal {padding-top: 8vh;}
+        #MemoryGame {width: 95%; height: 650px;}
+        .memewidth {width: 55%;}
+		.hover-shadow {max-height: 30vh; padding: 0.25rem;}
+    }
+
+    /* Small screens & Laptops */
+    @media screen and (min-width: 768px) {
+        .lightboxwidth {width: 60%;}
+        img.demo {height: 10%; width: 10%;}
+        .thumbnails {width: 30%;}
+        .modal {padding-top: 8vh;}
+        #MemoryGame {width: 83%; height: 650px;}
+        .memewidth {width: 45%;}
+		.hover-shadow {max-height: 40vh; padding: 0.25rem;}
+    }
+
+    /* Desktops & Large Screens */
+    @media screen and (min-width: 1024px) {
+        .lightboxwidth {width: 50%;}
+        .modal {padding-top: 5vh;}
+        #MemoryGame {width: 60%; height: 650px;}
+        .memewidth {width: 35%;}
+		.hover-shadow {max-height: 50vh; padding: 0.25rem;}
+    }
+
+    /* Extra large screens, TVs */
+    @media screen and (min-width: 1200px) {
+        .lightboxwidth {width: 45%;}
+        .modal {padding-top: 5vh;}
+        #MemoryGame {width: 55%; height: 650px;}
+        .memewidth {width: 30%;}
+    }
